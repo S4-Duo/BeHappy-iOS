@@ -12,7 +12,6 @@
 		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
 		C526392A29B0D70D001C0CD1 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392929B0D70D001C0CD1 /* +View.swift */; };
 		C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392B29B0D726001C0CD1 /* AppDelegate.swift */; };
-		C526392F29B0D77A001C0CD1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392E29B0D77A001C0CD1 /* AuthenticationViewModel.swift */; };
 		C526393129B0D7A9001C0CD1 /* GoogleUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526393029B0D7A9001C0CD1 /* GoogleUserModel.swift */; };
 		C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */; };
 		C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */; };
@@ -29,7 +28,6 @@
 /* Begin PBXFileReference section */
 		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
 		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C526392E29B0D77A001C0CD1 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		C526393029B0D7A9001C0CD1 /* GoogleUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUserModel.swift; sourceTree = "<group>"; };
 		C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -70,7 +68,6 @@
 		C526392D29B0D76C001C0CD1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				C526392E29B0D77A001C0CD1 /* AuthenticationViewModel.swift */,
 				C526393029B0D7A9001C0CD1 /* GoogleUserModel.swift */,
 			);
 			path = Models;
@@ -231,7 +228,6 @@
 				C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */,
 				C576B30629B0D52500C1D629 /* CameraView.swift in Sources */,
 				C526392A29B0D70D001C0CD1 /* +View.swift in Sources */,
-				C526392F29B0D77A001C0CD1 /* AuthenticationViewModel.swift in Sources */,
 				C576B2FE29B0D3BA00C1D629 /* ContentView.swift in Sources */,
 				C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */,
 			);
