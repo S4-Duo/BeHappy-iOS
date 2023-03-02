@@ -1,0 +1,476 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C526392229B0D62E001C0CD1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C526392129B0D62E001C0CD1 /* FirebaseAuth */; };
+		C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C526392429B0D6D4001C0CD1 /* GoogleSignIn */; };
+		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
+		C526392A29B0D70D001C0CD1 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392929B0D70D001C0CD1 /* +View.swift */; };
+		C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392B29B0D726001C0CD1 /* AppDelegate.swift */; };
+		C526392F29B0D77A001C0CD1 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392E29B0D77A001C0CD1 /* AuthenticationViewModel.swift */; };
+		C526393129B0D7A9001C0CD1 /* GoogleUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526393029B0D7A9001C0CD1 /* GoogleUserModel.swift */; };
+		C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */; };
+		C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */; };
+		C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */; };
+		C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2E929B0D2B300C1D629 /* Assets.xcassets */; };
+		C576B2ED29B0D2B300C1D629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2EC29B0D2B300C1D629 /* Preview Assets.xcassets */; };
+		C576B2FE29B0D3BA00C1D629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2FD29B0D3BA00C1D629 /* ContentView.swift */; };
+		C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2FF29B0D3CC00C1D629 /* HomeView.swift */; };
+		C576B30229B0D44700C1D629 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30129B0D44700C1D629 /* CameraService.swift */; };
+		C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30329B0D4C400C1D629 /* CustomCameraView.swift */; };
+		C576B30629B0D52500C1D629 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30529B0D52500C1D629 /* CameraView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
+		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C526392E29B0D77A001C0CD1 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		C526393029B0D7A9001C0CD1 /* GoogleUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUserModel.swift; sourceTree = "<group>"; };
+		C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
+		C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeHappy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHappy_iOSApp.swift; sourceTree = "<group>"; };
+		C576B2E929B0D2B300C1D629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C576B2EC29B0D2B300C1D629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C576B2FD29B0D3BA00C1D629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C576B2FF29B0D3CC00C1D629 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		C576B30129B0D44700C1D629 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
+		C576B30329B0D4C400C1D629 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
+		C576B30529B0D52500C1D629 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C576B2DF29B0D2B100C1D629 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */,
+				C526392229B0D62E001C0CD1 /* FirebaseAuth in Frameworks */,
+				C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C526392829B0D6FA001C0CD1 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C526392929B0D70D001C0CD1 /* +View.swift */,
+				C526392B29B0D726001C0CD1 /* AppDelegate.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C526392D29B0D76C001C0CD1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C526392E29B0D77A001C0CD1 /* AuthenticationViewModel.swift */,
+				C526393029B0D7A9001C0CD1 /* GoogleUserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C526393329B0D7CF001C0CD1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		C576B2D929B0D2B100C1D629 = {
+			isa = PBXGroup;
+			children = (
+				C576B2E429B0D2B100C1D629 /* BeHappy-iOS */,
+				C576B2E329B0D2B100C1D629 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C576B2E329B0D2B100C1D629 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C576B2E429B0D2B100C1D629 /* BeHappy-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */,
+				C526393329B0D7CF001C0CD1 /* Components */,
+				C526392D29B0D76C001C0CD1 /* Models */,
+				C526392829B0D6FA001C0CD1 /* Helpers */,
+				C576B2F629B0D31500C1D629 /* Views */,
+				C576B2F329B0D2F300C1D629 /* Services */,
+				C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */,
+				C576B2E929B0D2B300C1D629 /* Assets.xcassets */,
+				C576B2EB29B0D2B300C1D629 /* Preview Content */,
+			);
+			path = "BeHappy-iOS";
+			sourceTree = "<group>";
+		};
+		C576B2EB29B0D2B300C1D629 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C576B2EC29B0D2B300C1D629 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C576B2F329B0D2F300C1D629 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C576B30129B0D44700C1D629 /* CameraService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C576B2F629B0D31500C1D629 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C576B2FD29B0D3BA00C1D629 /* ContentView.swift */,
+				C576B2FF29B0D3CC00C1D629 /* HomeView.swift */,
+				C576B30329B0D4C400C1D629 /* CustomCameraView.swift */,
+				C576B30529B0D52500C1D629 /* CameraView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C576B2E129B0D2B100C1D629 /* BeHappy-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C576B2F029B0D2B300C1D629 /* Build configuration list for PBXNativeTarget "BeHappy-iOS" */;
+			buildPhases = (
+				C576B2DE29B0D2B100C1D629 /* Sources */,
+				C576B2DF29B0D2B100C1D629 /* Frameworks */,
+				C576B2E029B0D2B100C1D629 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BeHappy-iOS";
+			packageProductDependencies = (
+				C526392129B0D62E001C0CD1 /* FirebaseAuth */,
+				C526392429B0D6D4001C0CD1 /* GoogleSignIn */,
+				C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */,
+			);
+			productName = "BeHappy-iOS";
+			productReference = C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C576B2DA29B0D2B100C1D629 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					C576B2E129B0D2B100C1D629 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = C576B2DD29B0D2B100C1D629 /* Build configuration list for PBXProject "BeHappy-iOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C576B2D929B0D2B100C1D629;
+			packageReferences = (
+				C526392029B0D62E001C0CD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			productRefGroup = C576B2E329B0D2B100C1D629 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C576B2E129B0D2B100C1D629 /* BeHappy-iOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C576B2E029B0D2B100C1D629 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C576B2ED29B0D2B300C1D629 /* Preview Assets.xcassets in Resources */,
+				C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */,
+				C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C576B2DE29B0D2B100C1D629 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */,
+				C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */,
+				C526393129B0D7A9001C0CD1 /* GoogleUserModel.swift in Sources */,
+				C576B30229B0D44700C1D629 /* CameraService.swift in Sources */,
+				C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */,
+				C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */,
+				C576B30629B0D52500C1D629 /* CameraView.swift in Sources */,
+				C526392A29B0D70D001C0CD1 /* +View.swift in Sources */,
+				C526392F29B0D77A001C0CD1 /* AuthenticationViewModel.swift in Sources */,
+				C576B2FE29B0D3BA00C1D629 /* ContentView.swift in Sources */,
+				C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C576B2EE29B0D2B300C1D629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C576B2EF29B0D2B300C1D629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C576B2F129B0D2B300C1D629 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = M89JG7A6CN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C576B2F229B0D2B300C1D629 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = M89JG7A6CN;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C576B2DD29B0D2B100C1D629 /* Build configuration list for PBXProject "BeHappy-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C576B2EE29B0D2B300C1D629 /* Debug */,
+				C576B2EF29B0D2B300C1D629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C576B2F029B0D2B300C1D629 /* Build configuration list for PBXNativeTarget "BeHappy-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C576B2F129B0D2B300C1D629 /* Debug */,
+				C576B2F229B0D2B300C1D629 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C526392029B0D62E001C0CD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+		C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C526392129B0D62E001C0CD1 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C526392029B0D62E001C0CD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		C526392429B0D6D4001C0CD1 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = C576B2DA29B0D2B100C1D629 /* Project object */;
+}
