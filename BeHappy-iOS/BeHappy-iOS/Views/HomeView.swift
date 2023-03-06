@@ -19,7 +19,7 @@ struct HomeView: View {
                 label: {
                     Text("Sign out").padding(10)
                 }
-            )
+            ).buttonStyle(.borderedProminent).padding(.bottom)
             Spacer()
             Button(
                 action: {
