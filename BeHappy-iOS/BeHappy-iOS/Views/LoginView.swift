@@ -9,7 +9,7 @@ import FirebaseAuth
 import GoogleSignIn
 import Firebase
 
-struct ContentView: View {
+struct LoginView: View {
     var body: some View {
         VStack(alignment: .leading) {
             Image("TestImage").resizable()
@@ -55,8 +55,8 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginView()
     }
 }

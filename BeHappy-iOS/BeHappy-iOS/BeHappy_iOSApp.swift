@@ -15,7 +15,7 @@ struct MoodPredictorIOSApp: App {
     var body: some Scene {
         WindowGroup {
             if !isSignIn{
-                ContentView()
+                LoginView()
             } else{
                 HomeView()
             }

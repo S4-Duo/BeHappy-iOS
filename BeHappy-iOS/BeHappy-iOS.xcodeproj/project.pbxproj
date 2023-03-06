@@ -17,7 +17,7 @@
 		C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */; };
 		C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2E929B0D2B300C1D629 /* Assets.xcassets */; };
 		C576B2ED29B0D2B300C1D629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2EC29B0D2B300C1D629 /* Preview Assets.xcassets */; };
-		C576B2FE29B0D3BA00C1D629 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2FD29B0D3BA00C1D629 /* ContentView.swift */; };
+		C576B2FE29B0D3BA00C1D629 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2FD29B0D3BA00C1D629 /* LoginView.swift */; };
 		C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2FF29B0D3CC00C1D629 /* HomeView.swift */; };
 		C576B30229B0D44700C1D629 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30129B0D44700C1D629 /* CameraService.swift */; };
 		C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30329B0D4C400C1D629 /* CustomCameraView.swift */; };
@@ -34,7 +34,7 @@
 		C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHappy_iOSApp.swift; sourceTree = "<group>"; };
 		C576B2E929B0D2B300C1D629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C576B2EC29B0D2B300C1D629 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C576B2FD29B0D3BA00C1D629 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C576B2FD29B0D3BA00C1D629 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C576B2FF29B0D3CC00C1D629 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C576B30129B0D44700C1D629 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		C576B30329B0D4C400C1D629 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 		C576B2F629B0D31500C1D629 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C576B2FD29B0D3BA00C1D629 /* ContentView.swift */,
+				C576B2FD29B0D3BA00C1D629 /* LoginView.swift */,
 				C576B2FF29B0D3CC00C1D629 /* HomeView.swift */,
 				C576B30329B0D4C400C1D629 /* CustomCameraView.swift */,
 				C576B30529B0D52500C1D629 /* CameraView.swift */,
@@ -218,7 +218,7 @@
 				C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */,
 				C576B30629B0D52500C1D629 /* CameraView.swift in Sources */,
 				C526392A29B0D70D001C0CD1 /* +View.swift in Sources */,
-				C576B2FE29B0D3BA00C1D629 /* ContentView.swift in Sources */,
+				C576B2FE29B0D3BA00C1D629 /* LoginView.swift in Sources */,
 				C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
