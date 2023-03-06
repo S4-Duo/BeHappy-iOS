@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C526392229B0D62E001C0CD1 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C526392129B0D62E001C0CD1 /* FirebaseAuth */; };
+		0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0997038629B5DADE000D579C /* FirebaseAuth */; };
 		C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C526392429B0D6D4001C0CD1 /* GoogleSignIn */; };
 		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
 		C526392A29B0D70D001C0CD1 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392929B0D70D001C0CD1 /* +View.swift */; };
@@ -26,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0997038429B5D9B0000D579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
 		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C526393029B0D7A9001C0CD1 /* GoogleUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleUserModel.swift; sourceTree = "<group>"; };
@@ -48,7 +49,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */,
-				C526392229B0D62E001C0CD1 /* FirebaseAuth in Frameworks */,
+				0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */,
 				C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -100,6 +101,7 @@
 		C576B2E429B0D2B100C1D629 /* BeHappy-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				0997038429B5D9B0000D579C /* Info.plist */,
 				C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */,
 				C526393329B0D7CF001C0CD1 /* Components */,
 				C526392D29B0D76C001C0CD1 /* Models */,
@@ -157,9 +159,9 @@
 			);
 			name = "BeHappy-iOS";
 			packageProductDependencies = (
-				C526392129B0D62E001C0CD1 /* FirebaseAuth */,
 				C526392429B0D6D4001C0CD1 /* GoogleSignIn */,
 				C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */,
+				0997038629B5DADE000D579C /* FirebaseAuth */,
 			);
 			productName = "BeHappy-iOS";
 			productReference = C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */;
@@ -190,8 +192,8 @@
 			);
 			mainGroup = C576B2D929B0D2B100C1D629;
 			packageReferences = (
-				C526392029B0D62E001C0CD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+				0997038529B5DADE000D579C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = C576B2E329B0D2B100C1D629 /* Products */;
 			projectDirPath = "";
@@ -361,6 +363,7 @@
 				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -390,6 +393,7 @@
 				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -432,12 +436,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		C526392029B0D62E001C0CD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		0997038529B5DADE000D579C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 9.0.0;
+				branch = master;
+				kind = branch;
 			};
 		};
 		C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
@@ -451,9 +455,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		C526392129B0D62E001C0CD1 /* FirebaseAuth */ = {
+		0997038629B5DADE000D579C /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = C526392029B0D62E001C0CD1 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 0997038529B5DADE000D579C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
 		C526392429B0D6D4001C0CD1 /* GoogleSignIn */ = {
