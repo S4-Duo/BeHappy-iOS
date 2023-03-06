@@ -12,6 +12,14 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
+            Button (
+                action: {
+                    FireAuth.share.signOutFromGoogle()
+                },
+                label: {
+                    Text("Sign out").padding(10)
+                }
+            )
             Spacer()
             Button(
                 action: {
