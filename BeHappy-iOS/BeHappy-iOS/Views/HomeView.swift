@@ -18,7 +18,7 @@ struct HomeView: View {
                 Button {
                     isCustomCameraViewPresentent = true
                 } label: {
-                    Text("Navigate Button")
+                    Text("Navigate Button").padding()
                 }.buttonStyle(.borderedProminent)
             }
             .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
