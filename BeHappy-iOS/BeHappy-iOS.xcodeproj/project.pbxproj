@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0997038629B5DADE000D579C /* FirebaseAuth */; };
+		0997038929B5E292000D579C /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997038829B5E292000D579C /* FireAuth.swift */; };
 		C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C526392429B0D6D4001C0CD1 /* GoogleSignIn */; };
 		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
 		C526392A29B0D70D001C0CD1 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392929B0D70D001C0CD1 /* +View.swift */; };
@@ -26,6 +27,7 @@
 
 /* Begin PBXFileReference section */
 		0997038429B5D9B0000D579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		0997038829B5E292000D579C /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
 		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				C526392929B0D70D001C0CD1 /* +View.swift */,
 				C526392B29B0D726001C0CD1 /* AppDelegate.swift */,
+				0997038829B5E292000D579C /* FireAuth.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */,
 				C576B30629B0D52500C1D629 /* CameraView.swift in Sources */,
 				C526392A29B0D70D001C0CD1 /* +View.swift in Sources */,
+				0997038929B5E292000D579C /* FireAuth.swift in Sources */,
 				C576B2FE29B0D3BA00C1D629 /* LoginView.swift in Sources */,
 				C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */,
 			);
@@ -348,12 +352,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = M89JG7A6CN;
+				DEVELOPMENT_TEAM = SFUH889WFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera use";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) photo use";
+				INFOPLIST_KEY_NSCameraUsageDescription = "BeHappy-iOS camera use";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BeHappy-iOS photo use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -364,7 +368,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -380,12 +384,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = M89JG7A6CN;
+				DEVELOPMENT_TEAM = SFUH889WFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
-				INFOPLIST_KEY_NSCameraUsageDescription = "$(PRODUCT_NAME) camera use";
-				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "$(PRODUCT_NAME) photo use";
+				INFOPLIST_KEY_NSCameraUsageDescription = "BeHappy-iOS camera use";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BeHappy-iOS photo use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -396,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
