@@ -11,19 +11,19 @@ struct HomeView: View {
     @State private var isCustomCameraViewPresentent = false
     
     var body: some View {
-        VStack {
-            Spacer()
-            Button(
-                action: {
-                    isCustomCameraViewPresentent.toggle()
-                },
-                label: {
-                    Text("Take photo of the day").padding(10)
-                }
-            ).buttonStyle(.borderedProminent).padding(.bottom)
-                .fullScreenCover(isPresented: $isCustomCameraViewPresentent, content: {
-                CustomCameraView(capturedImage: $capturedImage, isPresent: $isCustomCameraViewPresentent).ignoresSafeArea()
-            })
+        NavigationStack {
+            VStack {
+                Spacer()
+                
+                Button {
+                    isCustomCameraViewPresentent = true
+                } label: {
+                    Text("Navigate Button")
+                }.buttonStyle(.borderedProminent)
+            }
+            .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
+                CustomCameraView(isPresent: $isCustomCameraViewPresentent)
+            }.navigationTitle("Goodmorning Brett,")
         }
     }
 }
