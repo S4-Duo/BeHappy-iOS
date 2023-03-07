@@ -7,7 +7,6 @@
 import SwiftUI
 
 struct HomeView: View {
-    @State private var capturedImage: UIImage? = nil
     @State private var isCustomCameraViewPresentent = false
     
     var body: some View {
@@ -18,12 +17,16 @@ struct HomeView: View {
                 Button {
                     isCustomCameraViewPresentent = true
                 } label: {
-                    Text("Navigate Button").padding()
-                }.buttonStyle(.borderedProminent)
+                    Text("Navigate Button")
+                        .padding()
+                }
+                .buttonStyle(.borderedProminent)
+                
             }
+            .navigationTitle("Goodmorning Brett,")
             .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
-                CustomCameraView(isPresent: $isCustomCameraViewPresentent)
-            }.navigationTitle("Goodmorning Brett,")
+                  CustomCameraView()
+             }
         }
     }
 }
