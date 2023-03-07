@@ -30,7 +30,7 @@ struct CustomPhotoView: View {
                     .foregroundColor(.white)
                     .imageScale(.large)
                     .padding(.leading, -8)
-                Text("Back").foregroundColor(.white)
+                Text("Delete").foregroundColor(.white)
             })
         )
     }

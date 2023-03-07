@@ -20,10 +20,22 @@ class CameraService {
     let previewLayer = AVCaptureVideoPreviewLayer()
     
     // Define a method named `start` that accepts a `delegate` parameter of type `AVCapturePhotoCaptureDelegate` and a `completion` parameter of type `(Error) -> ()`, and returns void
-    func start(delegate: AVCapturePhotoCaptureDelegate, completion: @escaping (Error) -> ()) {
+    func start(delegate: AVCapturePhotoCaptureDelegate, completion: @escaping (Error?) -> ()) {
         // Set the value of the `delegate` property to the value of the `delegate` parameter
         self.delegate = delegate
+        
+        // Check if the session is already running, if so, call the completion handler with no error
+        if session?.isRunning == true {
+            completion(nil)
+            return
+        }
+        
+        // Otherwise, set up the camera session
         checkCameraPermission(completion: completion)
+    }
+    
+    func stop() {
+        session?.stopRunning()
     }
     
     // Define a private method named `checkCameraPermission` that accepts a `completion` parameter of type `(Error) -> ()`, and returns void
@@ -59,30 +71,47 @@ class CameraService {
     private func setupCamera(completion: @escaping (Error) -> ()) {
         // Create a new `AVCaptureSession`
         let session = AVCaptureSession()
-        
+
         // Get the front camera
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera], mediaType: .video, position: .front)
         if let device = discoverySession.devices.first {
             do {
                 // Create an `AVCaptureDeviceInput` object from the front camera
                 let input = try AVCaptureDeviceInput(device: device)
+
                 // If the session can add the input, add it to the session
                 if session.canAddInput(input) {
                     session.addInput(input)
                 }
-                
+
+                // Create a video device output
+                let videoOutput = AVCaptureVideoDataOutput()
+
+                // If the session can add the output, add it to the session
+                if session.canAddOutput(videoOutput) {
+                    session.addOutput(videoOutput)
+
+                    // Set the video connection of the output
+                    let videoConnection = videoOutput.connection(with: .video)
+                    videoConnection?.videoOrientation = .portrait
+                }
+
                 // If the session can add the output, add it to the session
                 if session.canAddOutput(output) {
                     session.addOutput(output)
                 }
+
                 // Set the video gravity of the preview layer to `resizeAspectFill`
                 previewLayer.videoGravity = .resizeAspectFill
-                //Set the session of the preview layer to 'session'
+
+                // Set the session of the preview layer to `session`
                 previewLayer.session = session
-                //Start running session
+
+                // Start running the session
                 DispatchQueue.global(qos: .userInitiated).async {
                     session.startRunning()
                 }
+
                 self.session = session
             } catch {
                 completion(error)
@@ -92,7 +121,14 @@ class CameraService {
     
     // This function captures a photo using the device's camera with the specified settings.
     func capturePicture(with settings: AVCapturePhotoSettings = AVCapturePhotoSettings()) {
+        // Check if there is an active and enabled video connection
+        guard let videoConnection = output.connection(with: .video), videoConnection.isActive, videoConnection.isEnabled else {
+            print("No active and enabled video connection")
+            return
+        }
+
         // The delegate parameter is an instance of AVCapturePhotoCaptureDelegate that handles the completion of the photo capture process.
         output.capturePhoto(with: settings, delegate: delegate!)
     }
+
 }

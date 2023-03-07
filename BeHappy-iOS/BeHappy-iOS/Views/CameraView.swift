@@ -15,7 +15,20 @@ struct CameraView: UIViewControllerRepresentable {
     let cameraService: CameraService
     let didFinsishProcessingPhoto: (Result<AVCapturePhoto, Error>) -> ()
     
+    static var isCameraAvailable: Bool {
+        let discoverySession = AVCaptureDevice.DiscoverySession(
+            deviceTypes: [.builtInWideAngleCamera],
+            mediaType: .video,
+            position: .back
+        )
+        return discoverySession.devices.count > 0
+    }
+    
     func makeUIViewController(context: Context) -> UIViewController {
+        guard CameraView.isCameraAvailable else {
+            return UIViewController()
+        }
+        
         cameraService.start(delegate: context.coordinator) {err in
             if let err = err as NSError? {
                 didFinsishProcessingPhoto(.failure(err))
@@ -24,7 +37,6 @@ struct CameraView: UIViewControllerRepresentable {
         }
         
         let viewController = UIViewController()
-        
         viewController.view.backgroundColor = .black
         viewController.view.layer.addSublayer(cameraService.previewLayer)
         cameraService.previewLayer.frame = viewController.view.bounds
@@ -41,7 +53,7 @@ struct CameraView: UIViewControllerRepresentable {
     class Coordinator: NSObject, AVCapturePhotoCaptureDelegate {
         let parent: CameraView
         var didFinsishProcessingPhoto: (Result<AVCapturePhoto, Error>) -> ()
-        
+
         init(_ parent: CameraView, didFinsishProcessingPhoto: @escaping (Result<AVCapturePhoto, Error>) -> ()) {
             self.parent = parent
             self.didFinsishProcessingPhoto = didFinsishProcessingPhoto
@@ -55,6 +67,5 @@ struct CameraView: UIViewControllerRepresentable {
             
             didFinsishProcessingPhoto(.success(photo))
         }
-
     }
 }

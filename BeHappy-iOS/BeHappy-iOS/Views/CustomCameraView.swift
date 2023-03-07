@@ -15,6 +15,7 @@ struct CustomCameraView: View {
     
     var body: some View {
         ZStack {
+            //View that extually shows the camera
             CameraView(cameraService: cameraService) { result in
                 switch result {
                 case .success(let photo):
@@ -28,6 +29,7 @@ struct CustomCameraView: View {
                 }
             }
             
+            //Layout on top of the camera view
             VStack {
                 Spacer()
                 Button(action: {
@@ -63,4 +65,5 @@ struct CustomCameraView: View {
             })
         )
     }
+
 }
