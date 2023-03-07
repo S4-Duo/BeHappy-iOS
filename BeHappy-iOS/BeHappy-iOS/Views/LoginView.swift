@@ -16,15 +16,23 @@ struct LoginView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(maxWidth: UIScreen.main.bounds.width)
-                        .frame(height: UIScreen.main.bounds.width * 1)
+                        .frame(height: UIScreen.main.bounds.width * 1.07)
                         .ignoresSafeArea(.all)
             .edgesIgnoringSafeArea(.all)
-            Text("BeHappy").font(Font.largeTitle.weight(.bold)).frame(maxWidth: .infinity, alignment: .center)
+            Text("BeHappy").font(.custom(
+                "Child\'sHand",
+                fixedSize: 40)).frame(maxWidth: .infinity, alignment: .center)
             Spacer()
             GoogleSignInButton {
                 FireAuth.share.signInWithGoogle(presenting: getRootViewController()) { error in
                     print("ERROR:  \(String(describing: error))")
                 }
+            }
+        }
+        .onAppear() {
+            for family in UIFont.familyNames.sorted() {
+                let names = UIFont.fontNames(forFamilyName: family)
+                print("Family: \(family) Font names: \(names)")
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)

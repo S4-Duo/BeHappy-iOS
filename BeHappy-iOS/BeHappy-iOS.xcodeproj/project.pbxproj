@@ -24,6 +24,7 @@
 		C576B30229B0D44700C1D629 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30129B0D44700C1D629 /* CameraService.swift */; };
 		C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30329B0D4C400C1D629 /* CustomCameraView.swift */; };
 		C576B30629B0D52500C1D629 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30529B0D52500C1D629 /* CameraView.swift */; };
+		C5A0BCD729B76FBD0006E853 /* Childs-Hand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		C576B30129B0D44700C1D629 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
 		C576B30329B0D4C400C1D629 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
 		C576B30529B0D52500C1D629 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Childs-Hand.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		C576B2E429B0D2B100C1D629 /* BeHappy-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C5A0BCD529B76F560006E853 /* Fonts */,
 				0997038429B5D9B0000D579C /* Info.plist */,
 				C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */,
 				C526393329B0D7CF001C0CD1 /* Components */,
@@ -135,6 +138,14 @@
 				C576B30529B0D52500C1D629 /* CameraView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C5A0BCD529B76F560006E853 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C576B2ED29B0D2B300C1D629 /* Preview Assets.xcassets in Resources */,
+				C5A0BCD729B76FBD0006E853 /* Childs-Hand.ttf in Resources */,
 				C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */,
 				C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */,
 			);
