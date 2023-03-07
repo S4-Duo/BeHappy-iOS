@@ -11,44 +11,21 @@ import Firebase
 
 struct LoginView: View {
     var body: some View {
-        VStack(alignment: .leading) {
-            Image("TestImage").resizable()
-                .frame(width: UIScreen.main.bounds.width, height: 350).scaledToFit()
+        VStack(alignment: .center) {
+            Image("smiley")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .frame(maxWidth: UIScreen.main.bounds.width)
+                        .frame(height: UIScreen.main.bounds.width * 1)
+                        .ignoresSafeArea(.all)
+            .edgesIgnoringSafeArea(.all)
             Text("BeHappy").font(Font.largeTitle.weight(.bold)).frame(maxWidth: .infinity, alignment: .center)
+            Spacer()
             GoogleSignInButton {
-                guard let clientID = FirebaseApp.app()?.options.clientID else { return }
-                
-                // Create Google Sign In configuration object.
-                let config = GIDConfiguration(clientID: clientID)
-                GIDSignIn.sharedInstance.configuration = config
-                
-                // Start the sign in flow!
-                GIDSignIn.sharedInstance.signIn(withPresenting: getRootViewController()) { result, error in
-                    guard error == nil else {
-                        return
-                    }
-                    
-                    guard let user = result?.user,
-                          let idToken = user.idToken?.tokenString
-                    else {
-                        return
-                    }
-                    
-                    let credential = GoogleAuthProvider.credential(withIDToken: idToken,accessToken: user.accessToken.tokenString)
-                    
-                    Auth.auth().signIn(with: credential) {
-                        result, error in
-                        guard error == nil else {
-                            return
-                        }
-                        
-                        UserDefaults.standard.set(true, forKey: "signIn")
-                    }
-
+                FireAuth.share.signInWithGoogle(presenting: getRootViewController()) { error in
+                    print("ERROR:  \(error)")
                 }
-                
             }
-            
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .padding().background(Color.gray)
