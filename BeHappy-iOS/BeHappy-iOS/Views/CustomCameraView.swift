@@ -8,22 +8,19 @@
 import SwiftUI
 
 struct CustomCameraView: View {
-    
     let cameraService = CameraService()
-    @Binding var capturedImage: UIImage?
-    @Binding var isPresent: Bool
+    @State var capturedImage: UIImage? = nil
     
-    @Environment(\.presentationMode) private var PresentationMode
-
+    @Environment(\.presentationMode) private var presentationMode
+    
     var body: some View {
         ZStack {
+            //View that extually shows the camera
             CameraView(cameraService: cameraService) { result in
                 switch result {
-                    
                 case .success(let photo):
                     if let data = photo.fileDataRepresentation() {
                         capturedImage = UIImage(data: data)
-                        PresentationMode.wrappedValue.dismiss()
                     } else {
                         print("Error: No image data found")
                     }
@@ -32,37 +29,41 @@ struct CustomCameraView: View {
                 }
             }
             
+            //Layout on top of the camera view
             VStack {
-                HStack {
-                    Button (
-                        action: {
-                            isPresent = false
-                        },
-                        label: {
-                            Image(systemName: "chevron.backward")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .foregroundColor(.white)
-                                .fixedSize(horizontal: true, vertical: false)
-                                .padding(.leading, 20)
-                            Text("Back")
-                                .padding(.leading, 10)
-                                .foregroundColor(.white)
-                            Spacer()
-                        }
-                    ).padding(.bottom, 20)
-                    Spacer()
-                }.padding(.top, 50).frame(maxHeight: 100).background(Color.black.opacity(0.6))
-                
                 Spacer()
-                
                 Button(action: {
                     cameraService.capturePicture()
                 },
                 label: {
-                    Image(systemName: "circle").font(.system(size: 72)).foregroundColor(.white)
-                }).padding(.bottom)
+                    Image(systemName: "circle")
+                        .font(.system(size: 72))
+                        .foregroundColor(.white)
+                })
+                .padding(.bottom)
             }
         }
+        .navigationDestination(isPresented: Binding(
+            get: { capturedImage != nil },
+            set: { if !$0 { capturedImage = nil } }
+        )) {
+            CustomPhotoView(capturedImage: $capturedImage)
+         }
+        .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(
+            leading: Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            },
+            label: {
+                Image(systemName: "chevron.left")
+                    .foregroundColor(.white)
+                    .imageScale(.large)
+                    .padding(.leading, -8)
+                Text("Back")
+                    .foregroundColor(.white)
+            })
+        )
     }
+
 }

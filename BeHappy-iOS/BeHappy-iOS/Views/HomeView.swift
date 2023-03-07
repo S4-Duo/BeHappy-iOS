@@ -11,27 +11,31 @@ struct HomeView: View {
     @State private var isCustomCameraViewPresentent = false
     
     var body: some View {
-        VStack {
-            Button (
-                action: {
-                    FireAuth.share.signOutFromGoogle()
-                },
-                label: {
-                    Text("Sign out").padding(10)
+        NavigationStack {
+            VStack {
+                Button (
+                    action: {
+                        FireAuth.share.signOutFromGoogle()
+                    },
+                    label: {
+                        Text("Sign out").padding(10)
+                    }
+                ).buttonStyle(.borderedProminent).padding(.bottom)
+                Spacer()
+                
+                Button {
+                    isCustomCameraViewPresentent = true
+                } label: {
+                    Text("Navigate Button")
+                        .padding(10)
                 }
-            ).buttonStyle(.borderedProminent).padding(.bottom)
-            Spacer()
-            Button(
-                action: {
-                    isCustomCameraViewPresentent.toggle()
-                },
-                label: {
-                    Text("Take photo of the day").padding(10)
-                }
-            ).buttonStyle(.borderedProminent).padding(.bottom)
-                .fullScreenCover(isPresented: $isCustomCameraViewPresentent, content: {
-                CustomCameraView(capturedImage: $capturedImage, isPresent: $isCustomCameraViewPresentent).ignoresSafeArea()
-            })
+                .buttonStyle(.borderedProminent)
+                
+            }
+            .navigationTitle("Goodmorning Brett,")
+            .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
+                  CustomCameraView()
+             }
         }
     }
 }

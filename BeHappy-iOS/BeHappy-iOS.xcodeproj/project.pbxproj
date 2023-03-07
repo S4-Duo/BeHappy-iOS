@@ -15,6 +15,7 @@
 		C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392B29B0D726001C0CD1 /* AppDelegate.swift */; };
 		C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */; };
 		C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */; };
+		C55C570129B61BD20053ABF5 /* CustomPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55C570029B61BD20053ABF5 /* CustomPhotoView.swift */; };
 		C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */; };
 		C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2E929B0D2B300C1D629 /* Assets.xcassets */; };
 		C576B2ED29B0D2B300C1D629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2EC29B0D2B300C1D629 /* Preview Assets.xcassets */; };
@@ -32,6 +33,7 @@
 		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
 		C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C55C570029B61BD20053ABF5 /* CustomPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoView.swift; sourceTree = "<group>"; };
 		C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeHappy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHappy_iOSApp.swift; sourceTree = "<group>"; };
 		C576B2E929B0D2B300C1D629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 		C576B2F629B0D31500C1D629 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				C55C570029B61BD20053ABF5 /* CustomPhotoView.swift */,
 				C576B2FD29B0D3BA00C1D629 /* LoginView.swift */,
 				C576B2FF29B0D3CC00C1D629 /* HomeView.swift */,
 				C576B30329B0D4C400C1D629 /* CustomCameraView.swift */,
@@ -216,6 +219,7 @@
 			files = (
 				C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */,
 				C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */,
+				C55C570129B61BD20053ABF5 /* CustomPhotoView.swift in Sources */,
 				C576B30229B0D44700C1D629 /* CameraService.swift in Sources */,
 				C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */,
 				C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */,
