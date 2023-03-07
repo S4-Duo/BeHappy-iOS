@@ -16,24 +16,23 @@ struct GoogleSignInButton: View {
             action()
         } label: {
             HStack{
-                Spacer()
                 Image("google")
                     .resizable()
                     .scaledToFit()
                     .padding()
                     .mask(
                         Circle()
-                    ).frame(height: 75)
-                Text("Login with Google").padding()
+                    ).frame(height: 65)
+                Text("Sign in with Google").foregroundColor(Color.black.opacity(0.54)).fontWeight(.semibold).font(.title3)
                 Spacer()
             }.background(.white)
         }
-        .frame(height: 50)
+        .frame(height: 60)
         .frame(width: UIScreen.main.bounds.width * 0.9)
         .edgesIgnoringSafeArea(.horizontal)
-        .cornerRadius(20) /// make the background rounded
+        .cornerRadius(10) /// make the background rounded
         .overlay( /// apply a rounded border
-            RoundedRectangle(cornerRadius: 20)
+            RoundedRectangle(cornerRadius: 10)
                 .stroke(.white, lineWidth: 1)
         ).shadow(radius: 5)
         

@@ -23,12 +23,12 @@ struct LoginView: View {
             Spacer()
             GoogleSignInButton {
                 FireAuth.share.signInWithGoogle(presenting: getRootViewController()) { error in
-                    print("ERROR:  \(error)")
+                    print("ERROR:  \(String(describing: error))")
                 }
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
-        .padding().background(Color.gray)
+        .padding().background(.white)
     }
 }
 
