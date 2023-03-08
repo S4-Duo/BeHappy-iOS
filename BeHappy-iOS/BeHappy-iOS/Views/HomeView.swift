@@ -18,24 +18,18 @@ struct HomeView: View {
         TabView {
             NavigationStack {
                 VStack {
-                    Button (
-                        action: {
-                            FireAuth.share.signOutFromGoogle()
-                        },
-                        label: {
-                            Text("Sign out").padding(10)
-                        }
-                    ).buttonStyle(.borderedProminent).padding(.bottom)
                     Spacer()
                     
                     Button {
                         isCustomCameraViewPresentent = true
                     } label: {
-                        Text("Navigate Button")
+                        Spacer()
+                        Text("Take photo of the day!")
                             .padding(10)
+                        Spacer()
                     }
                     .buttonStyle(.borderedProminent)
-                    .padding(.bottom, 10)
+                    .padding(10)
                 }
                 .navigationTitle("Goodmorning Brett,")
                 .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
