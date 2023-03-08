@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		09617C3D29B87B5300559C81 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09617C3C29B87B5300559C81 /* SettingsView.swift */; };
+		09617C4229B8844900559C81 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09617C4129B8844900559C81 /* SettingsStore.swift */; };
 		0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0997038629B5DADE000D579C /* FirebaseAuth */; };
 		0997038929B5E292000D579C /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997038829B5E292000D579C /* FireAuth.swift */; };
 		C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C526392429B0D6D4001C0CD1 /* GoogleSignIn */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		09617C3C29B87B5300559C81 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		09617C4129B8844900559C81 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		0997038429B5D9B0000D579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0997038829B5E292000D579C /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
@@ -63,6 +65,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09617C3E29B87E3500559C81 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				09617C4129B8844900559C81 /* SettingsStore.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		C526392829B0D6FA001C0CD1 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +110,7 @@
 		C576B2E429B0D2B100C1D629 /* BeHappy-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				09617C3E29B87E3500559C81 /* Models */,
 				C5A0BCD529B76F560006E853 /* Fonts */,
 				0997038429B5D9B0000D579C /* Info.plist */,
 				C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */,
@@ -235,6 +246,7 @@
 				C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */,
 				C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */,
 				C55C570129B61BD20053ABF5 /* CustomPhotoView.swift in Sources */,
+				09617C4229B8844900559C81 /* SettingsStore.swift in Sources */,
 				C576B30229B0D44700C1D629 /* CameraService.swift in Sources */,
 				C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */,
 				C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */,
