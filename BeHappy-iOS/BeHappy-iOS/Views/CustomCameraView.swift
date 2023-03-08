@@ -43,6 +43,7 @@ struct CustomCameraView: View {
                 .padding(.bottom)
             }
         }
+        .toolbar(.hidden, for: .tabBar)
         .navigationDestination(isPresented: Binding(
             get: { capturedImage != nil },
             set: { if !$0 { capturedImage = nil } }
