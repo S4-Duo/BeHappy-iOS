@@ -10,32 +10,51 @@ struct HomeView: View {
     @State private var capturedImage: UIImage? = nil
     @State private var isCustomCameraViewPresentent = false
     
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor.init(Color(red: 251 / 255, green: 252 / 255, blue: 252 / 255))
+    }
+    
     var body: some View {
-        NavigationStack {
-            VStack {
-                Button (
-                    action: {
-                        FireAuth.share.signOutFromGoogle()
-                    },
-                    label: {
-                        Text("Sign out").padding(10)
+        TabView {
+            NavigationStack {
+                VStack {
+                    Spacer()
+                    
+                    Button {
+                        isCustomCameraViewPresentent = true
+                    } label: {
+                        Spacer()
+                        Text("Take photo of the day!")
+                            .padding(10)
+                        Spacer()
                     }
-                ).buttonStyle(.borderedProminent).padding(.bottom)
-                Spacer()
-                
-                Button {
-                    isCustomCameraViewPresentent = true
-                } label: {
-                    Text("Navigate Button")
-                        .padding(10)
+                    .buttonStyle(.borderedProminent)
+                    .padding(10)
                 }
-                .buttonStyle(.borderedProminent)
-                
+                .navigationTitle("Goodmorning Brett,")
+                .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
+                    CustomCameraView()
+                }
             }
-            .navigationTitle("Goodmorning Brett,")
-            .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
-                  CustomCameraView()
-             }
+            .tabItem {
+                VStack {
+                    Image(systemName: "house.fill")
+                    Text("Home")
+                }
+            }
+            
+            CommunityView()
+                .tabItem {
+                    Image(systemName: "person.3.fill")
+                    Text("Community")
+                }
+                
+            
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gearshape.fill")
+                    Text("Settings")
+                }
         }
     }
 }
