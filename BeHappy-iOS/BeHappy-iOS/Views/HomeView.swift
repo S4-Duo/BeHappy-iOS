@@ -18,6 +18,9 @@ struct HomeView: View {
         TabView {
             NavigationStack {
                 VStack {
+                    AnimatedImageView(mood: "Happy")
+                        .padding(10)
+                    
                     Spacer()
                     
                     Button {

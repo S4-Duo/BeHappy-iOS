@@ -28,6 +28,10 @@
 		C576B30629B0D52500C1D629 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30529B0D52500C1D629 /* CameraView.swift */; };
 		C5A0BCD729B76FBD0006E853 /* Childs-Hand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */; };
 		C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F496F429B8809D001670E9 /* CommunityView.swift */; };
+		C5F496FE29B89DF0001670E9 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5F496FD29B89DF0001670E9 /* gif.gif */; };
+		C5F4970129B8B869001670E9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970029B8B869001670E9 /* SDWebImage */; };
+		C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970329B8BA40001670E9 /* FLAnimatedImage */; };
+		C5F4970629B8BA8E001670E9 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +55,8 @@
 		C576B30529B0D52500C1D629 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
 		C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Childs-Hand.ttf"; sourceTree = "<group>"; };
 		C5F496F429B8809D001670E9 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
+		C5F496FD29B89DF0001670E9 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
+		C5F4970529B8BA8E001670E9 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +66,8 @@
 			files = (
 				C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */,
 				0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */,
+				C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */,
+				C5F4970129B8B869001670E9 /* SDWebImage in Frameworks */,
 				C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,6 +120,7 @@
 		C576B2E429B0D2B100C1D629 /* BeHappy-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C5F496FD29B89DF0001670E9 /* gif.gif */,
 				09617C3E29B87E3500559C81 /* Models */,
 				C5A0BCD529B76F560006E853 /* Fonts */,
 				0997038429B5D9B0000D579C /* Info.plist */,
@@ -153,6 +162,7 @@
 				C576B30529B0D52500C1D629 /* CameraView.swift */,
 				09617C3C29B87B5300559C81 /* SettingsView.swift */,
 				C5F496F429B8809D001670E9 /* CommunityView.swift */,
+				C5F4970529B8BA8E001670E9 /* AnimatedImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -185,6 +195,8 @@
 				C526392429B0D6D4001C0CD1 /* GoogleSignIn */,
 				C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */,
 				0997038629B5DADE000D579C /* FirebaseAuth */,
+				C5F4970029B8B869001670E9 /* SDWebImage */,
+				C5F4970329B8BA40001670E9 /* FLAnimatedImage */,
 			);
 			productName = "BeHappy-iOS";
 			productReference = C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */;
@@ -217,6 +229,8 @@
 			packageReferences = (
 				C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 				0997038529B5DADE000D579C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				C5F496FF29B8B869001670E9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				C5F4970229B8BA40001670E9 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */,
 			);
 			productRefGroup = C576B2E329B0D2B100C1D629 /* Products */;
 			projectDirPath = "";
@@ -236,6 +250,7 @@
 				C5A0BCD729B76FBD0006E853 /* Childs-Hand.ttf in Resources */,
 				C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */,
 				C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */,
+				C5F496FE29B89DF0001670E9 /* gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +263,7 @@
 			files = (
 				C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */,
 				C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */,
+				C5F4970629B8BA8E001670E9 /* AnimatedImageView.swift in Sources */,
 				C55C570129B61BD20053ABF5 /* CustomPhotoView.swift in Sources */,
 				09617C4229B8844900559C81 /* SettingsStore.swift in Sources */,
 				C576B30229B0D44700C1D629 /* CameraService.swift in Sources */,
@@ -484,6 +500,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		C5F496FF29B8B869001670E9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		C5F4970229B8BA40001670E9 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flipboard/FLAnimatedImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -501,6 +533,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		C5F4970029B8B869001670E9 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5F496FF29B8B869001670E9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		C5F4970329B8BA40001670E9 /* FLAnimatedImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5F4970229B8BA40001670E9 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */;
+			productName = FLAnimatedImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
