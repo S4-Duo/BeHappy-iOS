@@ -17,7 +17,7 @@ struct MoodPredictorIOSApp: App {
             if !isSignIn{
                 LoginView()
             } else{
-                SettingsView()
+                HomeView()
             }
         }
     }
