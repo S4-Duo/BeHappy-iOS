@@ -10,6 +10,8 @@ struct HomeView: View {
     @State private var capturedImage: UIImage? = nil
     @State private var isCustomCameraViewPresentent = false
     
+    @State private var currentMood = "Happy"
+    
     @StateObject var settings = Settings()
     
     init() {
@@ -20,6 +22,15 @@ struct HomeView: View {
         TabView {
             NavigationStack {
                 VStack {
+                    Text("Predicted mood:")
+                        .font(.title)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 18)
+                    Text("\(currentMood)")
+                        .font(.title)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 18)
+                    
                     if settings.isShowGif {
                         AnimatedImageView(mood: "Happy")
                             .padding(10)
