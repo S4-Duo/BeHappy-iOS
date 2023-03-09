@@ -19,12 +19,14 @@ struct WeatherCardComponent: View {
             AsyncImage(url: imageLink)
             Spacer()
             VStack {
-                Text("\(weatherDescription ?? "")")
-                    .foregroundColor(.white)
                 Text("\(Int(round(temperature ?? 0)))°C")
                     .foregroundColor(.white)
+                    .font(.title3)
+                Text("\(weatherDescription ?? "")")
+                    .foregroundColor(.white)
+                    .font(.title3)
             }
-            .padding(10)
+            .padding(.trailing, 20)
         }
         .background(.blue)
         .cornerRadius(10)
