@@ -11,6 +11,7 @@
 		09617C4229B8844900559C81 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09617C4129B8844900559C81 /* SettingsStore.swift */; };
 		0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0997038629B5DADE000D579C /* FirebaseAuth */; };
 		0997038929B5E292000D579C /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997038829B5E292000D579C /* FireAuth.swift */; };
+		09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */; };
 		C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C526392429B0D6D4001C0CD1 /* GoogleSignIn */; };
 		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
 		C526392A29B0D70D001C0CD1 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392929B0D70D001C0CD1 /* +View.swift */; };
@@ -30,7 +31,6 @@
 		C5B7011B29B9CDF8003589B1 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011A29B9CDF8003589B1 /* WeatherService.swift */; };
 		C5B7011D29B9D042003589B1 /* WeatherCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */; };
 		C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F496F429B8809D001670E9 /* CommunityView.swift */; };
-		C5F496FE29B89DF0001670E9 /* gif.gif in Resources */ = {isa = PBXBuildFile; fileRef = C5F496FD29B89DF0001670E9 /* gif.gif */; };
 		C5F4970129B8B869001670E9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970029B8B869001670E9 /* SDWebImage */; };
 		C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970329B8BA40001670E9 /* FLAnimatedImage */; };
 		C5F4970629B8BA8E001670E9 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageView.swift */; };
@@ -41,6 +41,7 @@
 		09617C4129B8844900559C81 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		0997038429B5D9B0000D579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0997038829B5E292000D579C /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
+		09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = CNNEmotions.mlpackage; sourceTree = "<group>"; };
 		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
 		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
@@ -59,7 +60,6 @@
 		C5B7011A29B9CDF8003589B1 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardComponent.swift; sourceTree = "<group>"; };
 		C5F496F429B8809D001670E9 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
-		C5F496FD29B89DF0001670E9 /* gif.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = gif.gif; sourceTree = "<group>"; };
 		C5F4970529B8BA8E001670E9 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,7 +125,7 @@
 		C576B2E429B0D2B100C1D629 /* BeHappy-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C5F496FD29B89DF0001670E9 /* gif.gif */,
+				09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */,
 				09617C3E29B87E3500559C81 /* Models */,
 				C5A0BCD529B76F560006E853 /* Fonts */,
 				0997038429B5D9B0000D579C /* Info.plist */,
@@ -256,7 +256,6 @@
 				C5A0BCD729B76FBD0006E853 /* Childs-Hand.ttf in Resources */,
 				C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */,
 				C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */,
-				C5F496FE29B89DF0001670E9 /* gif.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +277,7 @@
 				C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */,
 				C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */,
 				C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */,
+				09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */,
 				C576B30629B0D52500C1D629 /* CameraView.swift in Sources */,
 				C526392A29B0D70D001C0CD1 /* +View.swift in Sources */,
 				0997038929B5E292000D579C /* FireAuth.swift in Sources */,
@@ -412,7 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = M89JG7A6CN;
+				DEVELOPMENT_TEAM = SFUH889WFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
@@ -428,7 +428,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -444,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = M89JG7A6CN;
+				DEVELOPMENT_TEAM = SFUH889WFT;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
@@ -460,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
