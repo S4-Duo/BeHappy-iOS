@@ -10,6 +10,8 @@ struct HomeView: View {
     @State private var capturedImage: UIImage? = nil
     @State private var isCustomCameraViewPresentent = false
     
+    @StateObject var settings = Settings()
+    
     init() {
         UITabBar.appearance().backgroundColor = UIColor.init(Color(red: 251 / 255, green: 252 / 255, blue: 252 / 255))
     }
@@ -18,9 +20,17 @@ struct HomeView: View {
         TabView {
             NavigationStack {
                 VStack {
-                    AnimatedImageView(mood: "Happy")
-                        .padding(10)
+                    if settings.isShowGif {
+                        AnimatedImageView(mood: "Happy")
+                            .padding(10)
+                            .frame(height: 250)
+                    }
                     
+                    if settings.isShowWeather {
+                        WeatherCardComponent()
+                            .padding(10)
+                    }
+
                     Spacer()
                     
                     Button {
