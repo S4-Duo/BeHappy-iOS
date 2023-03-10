@@ -11,7 +11,8 @@ import Combine
 
 
 class Settings: ObservableObject {
-    @AppStorage("showWeather") var isShowWeather = false
-    @AppStorage("showGif") var isShowGif = false
-    @AppStorage("showSpotify") var isShowSpotify = true
+    @AppStorage("showGif") var isShowGif = true
+    @AppStorage("showWeather") var isShowWeather = true
+    @AppStorage("showSpotify") var isShowSpotify = false
+    @AppStorage("showHeartRate") var isShowHeartRate = true
 }

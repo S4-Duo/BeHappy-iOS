@@ -9,7 +9,7 @@ import SwiftUI
 import CoreML
 import Vision
 
-struct CustomPhotoView: View {
+struct PhotoView: View {
     @Binding var capturedImage: UIImage?
     @Environment(\.presentationMode) private var presentationMode
     @State private var mood: String = ""
@@ -63,7 +63,7 @@ struct CustomPhotoView: View {
         
         DispatchQueue.global().async {
             do {
-                let model = try VNCoreMLModel(for: CNNEmotions().model)
+                let model = try VNCoreMLModel(for: FacialExpression().model)
                 
                 let request = VNCoreMLRequest(model: model) { request, error in
                     guard let results = request.results as? [VNClassificationObservation],

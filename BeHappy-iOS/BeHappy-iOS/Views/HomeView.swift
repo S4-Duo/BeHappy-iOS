@@ -21,43 +21,51 @@ struct HomeView: View {
     var body: some View {
         TabView {
             NavigationStack {
-                VStack {
-                    Text("Predicted mood:")
-                        .font(.title)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 18)
-                    Text("\(currentMood)")
-                        .font(.title)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .padding(.leading, 18)
-                    
-                    if settings.isShowGif {
-                        AnimatedImageView(mood: "Happy")
-                            .padding(10)
-                            .frame(height: 250)
-                    }
-                    
-                    if settings.isShowWeather {
-                        WeatherCardComponent()
-                            .padding(10)
-                    }
-
-                    Spacer()
-                    
-                    Button {
-                        isCustomCameraViewPresentent = true
-                    } label: {
+                ScrollView {
+                    VStack {
+                        Text("Predicted mood:")
+                            .font(.title)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading, 18)
+                        Text("\(currentMood)")
+                            .font(.title)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading, 18)
+                        
+                        if settings.isShowGif {
+                            AnimatedImageComponent(mood: "Happy")
+                                .padding(10)
+                                .frame(height: 250)
+                        }
+                        
+                        if settings.isShowWeather {
+                            WeatherCardComponent()
+                                .padding(10)
+                        }
+                        
+                        if settings.isShowHeartRate {
+                            HeartRateComponent()
+                                .padding(10)
+                                .padding(.top, -20)
+                        }
+                        
                         Spacer()
-                        Text("Take photo of the day!")
-                            .padding(10)
-                        Spacer()
+                        
+                        Button {
+                            isCustomCameraViewPresentent = true
+                        } label: {
+                            Spacer()
+                            Text("Take photo of the day!")
+                                .padding(10)
+                            Spacer()
+                        }
+                        .buttonStyle(.borderedProminent)
+                        .padding(10)
                     }
-                    .buttonStyle(.borderedProminent)
-                    .padding(10)
                 }
                 .navigationTitle("Goodmorning Brett,")
                 .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
-                    CustomCameraView()
+                    CameraView()
                 }
             }
             .tabItem {

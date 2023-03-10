@@ -20,15 +20,13 @@ struct WeatherCardComponent: View {
             Spacer()
             VStack {
                 Text("\(Int(round(temperature ?? 0)))°C")
-                    .foregroundColor(.white)
                     .font(.title3)
                 Text("\(weatherDescription ?? "")")
-                    .foregroundColor(.white)
                     .font(.title3)
             }
             .padding(.trailing, 20)
         }
-        .background(.blue)
+        .background(Color.gray.opacity(0.3))
         .cornerRadius(10)
         .onAppear() {
             weatherService.fetchTemperature(city: "Maasbree") { temperature, error in

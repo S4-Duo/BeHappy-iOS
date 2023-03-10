@@ -23,7 +23,7 @@ struct LoginView: View {
                 "Child\'sHand",
                 fixedSize: 40)).frame(maxWidth: .infinity, alignment: .center)
             Spacer()
-            GoogleSignInButton {
+            GoogleButtonComponent {
                 FireAuth.share.signInWithGoogle(presenting: getRootViewController()) { error in
                     print("ERROR:  \(String(describing: error))")
                 }

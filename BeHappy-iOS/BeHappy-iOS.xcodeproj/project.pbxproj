@@ -16,24 +16,27 @@
 		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
 		C526392A29B0D70D001C0CD1 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392929B0D70D001C0CD1 /* +View.swift */; };
 		C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392B29B0D726001C0CD1 /* AppDelegate.swift */; };
-		C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */; };
+		C526393529B0D7DD001C0CD1 /* GoogleButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526393429B0D7DD001C0CD1 /* GoogleButtonComponent.swift */; };
 		C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */; };
-		C55C570129B61BD20053ABF5 /* CustomPhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55C570029B61BD20053ABF5 /* CustomPhotoView.swift */; };
+		C55C570129B61BD20053ABF5 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55C570029B61BD20053ABF5 /* PhotoView.swift */; };
 		C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */; };
 		C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2E929B0D2B300C1D629 /* Assets.xcassets */; };
 		C576B2ED29B0D2B300C1D629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2EC29B0D2B300C1D629 /* Preview Assets.xcassets */; };
 		C576B2FE29B0D3BA00C1D629 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2FD29B0D3BA00C1D629 /* LoginView.swift */; };
 		C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2FF29B0D3CC00C1D629 /* HomeView.swift */; };
 		C576B30229B0D44700C1D629 /* CameraService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30129B0D44700C1D629 /* CameraService.swift */; };
-		C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30329B0D4C400C1D629 /* CustomCameraView.swift */; };
-		C576B30629B0D52500C1D629 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30529B0D52500C1D629 /* CameraView.swift */; };
+		C576B30429B0D4C400C1D629 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30329B0D4C400C1D629 /* CameraView.swift */; };
+		C576B30629B0D52500C1D629 /* CameraPreviewComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B30529B0D52500C1D629 /* CameraPreviewComponent.swift */; };
+		C57EFAC729BB98CA00EE19CA /* FacialExpression.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C57EFAC629BB98CA00EE19CA /* FacialExpression.mlmodel */; };
+		C57EFAC929BB9F3C00EE19CA /* HeartRateComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57EFAC829BB9F3C00EE19CA /* HeartRateComponent.swift */; };
+		C57EFACE29BBA56400EE19CA /* HealthKitService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C57EFACD29BBA56400EE19CA /* HealthKitService.swift */; };
 		C5A0BCD729B76FBD0006E853 /* Childs-Hand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */; };
 		C5B7011B29B9CDF8003589B1 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011A29B9CDF8003589B1 /* WeatherService.swift */; };
 		C5B7011D29B9D042003589B1 /* WeatherCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */; };
 		C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F496F429B8809D001670E9 /* CommunityView.swift */; };
 		C5F4970129B8B869001670E9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970029B8B869001670E9 /* SDWebImage */; };
 		C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970329B8BA40001670E9 /* FLAnimatedImage */; };
-		C5F4970629B8BA8E001670E9 /* AnimatedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageView.swift */; };
+		C5F4970629B8BA8E001670E9 /* AnimatedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,9 +47,9 @@
 		09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = CNNEmotions.mlpackage; sourceTree = "<group>"; };
 		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
 		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleSignInButton.swift; sourceTree = "<group>"; };
+		C526393429B0D7DD001C0CD1 /* GoogleButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButtonComponent.swift; sourceTree = "<group>"; };
 		C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		C55C570029B61BD20053ABF5 /* CustomPhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPhotoView.swift; sourceTree = "<group>"; };
+		C55C570029B61BD20053ABF5 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
 		C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeHappy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHappy_iOSApp.swift; sourceTree = "<group>"; };
 		C576B2E929B0D2B300C1D629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,13 +57,17 @@
 		C576B2FD29B0D3BA00C1D629 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C576B2FF29B0D3CC00C1D629 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		C576B30129B0D44700C1D629 /* CameraService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraService.swift; sourceTree = "<group>"; };
-		C576B30329B0D4C400C1D629 /* CustomCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCameraView.swift; sourceTree = "<group>"; };
-		C576B30529B0D52500C1D629 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C576B30329B0D4C400C1D629 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		C576B30529B0D52500C1D629 /* CameraPreviewComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewComponent.swift; sourceTree = "<group>"; };
+		C57EFAC629BB98CA00EE19CA /* FacialExpression.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = FacialExpression.mlmodel; sourceTree = "<group>"; };
+		C57EFAC829BB9F3C00EE19CA /* HeartRateComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateComponent.swift; sourceTree = "<group>"; };
+		C57EFACC29BBA37F00EE19CA /* BeHappy-iOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BeHappy-iOS.entitlements"; sourceTree = "<group>"; };
+		C57EFACD29BBA56400EE19CA /* HealthKitService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthKitService.swift; sourceTree = "<group>"; };
 		C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Childs-Hand.ttf"; sourceTree = "<group>"; };
 		C5B7011A29B9CDF8003589B1 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardComponent.swift; sourceTree = "<group>"; };
 		C5F496F429B8809D001670E9 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
-		C5F4970529B8BA8E001670E9 /* AnimatedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageView.swift; sourceTree = "<group>"; };
+		C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +107,11 @@
 		C526393329B0D7CF001C0CD1 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				C526393429B0D7DD001C0CD1 /* GoogleSignInButton.swift */,
+				C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */,
+				C576B30529B0D52500C1D629 /* CameraPreviewComponent.swift */,
+				C526393429B0D7DD001C0CD1 /* GoogleButtonComponent.swift */,
 				C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */,
+				C57EFAC829BB9F3C00EE19CA /* HeartRateComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -125,6 +135,8 @@
 		C576B2E429B0D2B100C1D629 /* BeHappy-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				C57EFACC29BBA37F00EE19CA /* BeHappy-iOS.entitlements */,
+				C57EFAC629BB98CA00EE19CA /* FacialExpression.mlmodel */,
 				09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */,
 				09617C3E29B87E3500559C81 /* Models */,
 				C5A0BCD529B76F560006E853 /* Fonts */,
@@ -154,6 +166,7 @@
 			children = (
 				C576B30129B0D44700C1D629 /* CameraService.swift */,
 				C5B7011A29B9CDF8003589B1 /* WeatherService.swift */,
+				C57EFACD29BBA56400EE19CA /* HealthKitService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,14 +174,12 @@
 		C576B2F629B0D31500C1D629 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				C55C570029B61BD20053ABF5 /* CustomPhotoView.swift */,
+				C55C570029B61BD20053ABF5 /* PhotoView.swift */,
 				C576B2FD29B0D3BA00C1D629 /* LoginView.swift */,
 				C576B2FF29B0D3CC00C1D629 /* HomeView.swift */,
-				C576B30329B0D4C400C1D629 /* CustomCameraView.swift */,
-				C576B30529B0D52500C1D629 /* CameraView.swift */,
+				C576B30329B0D4C400C1D629 /* CameraView.swift */,
 				09617C3C29B87B5300559C81 /* SettingsView.swift */,
 				C5F496F429B8809D001670E9 /* CommunityView.swift */,
-				C5F4970529B8BA8E001670E9 /* AnimatedImageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -267,18 +278,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5B7011B29B9CDF8003589B1 /* WeatherService.swift in Sources */,
+				C57EFAC729BB98CA00EE19CA /* FacialExpression.mlmodel in Sources */,
 				C5B7011D29B9D042003589B1 /* WeatherCardComponent.swift in Sources */,
-				C526393529B0D7DD001C0CD1 /* GoogleSignInButton.swift in Sources */,
+				C526393529B0D7DD001C0CD1 /* GoogleButtonComponent.swift in Sources */,
 				C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */,
-				C5F4970629B8BA8E001670E9 /* AnimatedImageView.swift in Sources */,
-				C55C570129B61BD20053ABF5 /* CustomPhotoView.swift in Sources */,
+				C5F4970629B8BA8E001670E9 /* AnimatedImageComponent.swift in Sources */,
+				C55C570129B61BD20053ABF5 /* PhotoView.swift in Sources */,
 				09617C4229B8844900559C81 /* SettingsStore.swift in Sources */,
 				C576B30229B0D44700C1D629 /* CameraService.swift in Sources */,
 				C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */,
-				C576B30429B0D4C400C1D629 /* CustomCameraView.swift in Sources */,
+				C576B30429B0D4C400C1D629 /* CameraView.swift in Sources */,
+				C57EFACE29BBA56400EE19CA /* HealthKitService.swift in Sources */,
 				C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */,
 				09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */,
-				C576B30629B0D52500C1D629 /* CameraView.swift in Sources */,
+				C576B30629B0D52500C1D629 /* CameraPreviewComponent.swift in Sources */,
+				C57EFAC929BB9F3C00EE19CA /* HeartRateComponent.swift in Sources */,
 				C526392A29B0D70D001C0CD1 /* +View.swift in Sources */,
 				0997038929B5E292000D579C /* FireAuth.swift in Sources */,
 				09617C3D29B87B5300559C81 /* SettingsView.swift in Sources */,
@@ -409,14 +423,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BeHappy-iOS/BeHappy-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = SFUH889WFT;
+				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "BeHappy-iOS camera use";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow this app to use your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow this app to use your health kit";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BeHappy-iOS photo use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -428,7 +445,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -441,14 +458,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "BeHappy-iOS/BeHappy-iOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = SFUH889WFT;
+				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
 				INFOPLIST_KEY_NSCameraUsageDescription = "BeHappy-iOS camera use";
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Allow this app to use your health data";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "Allow this app to use your health kit";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "BeHappy-iOS photo use";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -460,7 +480,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

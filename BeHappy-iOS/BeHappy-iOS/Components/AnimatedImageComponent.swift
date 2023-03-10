@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 import FLAnimatedImage
 
-struct AnimatedImageView: UIViewRepresentable {
+struct AnimatedImageComponent: UIViewRepresentable {
     let animatedView = FLAnimatedImageView()
     
     let mood: String
@@ -70,7 +70,7 @@ struct AnimatedImageView: UIViewRepresentable {
         URL(string: "https://media.giphy.com/media/YTJXDIivNMPuNSMgc0/giphy.gif")!,
     ]
 
-    func makeUIView(context: UIViewRepresentableContext<AnimatedImageView>) -> UIView {
+    func makeUIView(context: UIViewRepresentableContext<AnimatedImageComponent>) -> UIView {
         let view = UIView()
         
         var gifUrl: URL? = nil
@@ -115,7 +115,7 @@ struct AnimatedImageView: UIViewRepresentable {
         return view
     }
     
-    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<AnimatedImageView>) {
+    func updateUIView(_ uiView: UIView, context: UIViewRepresentableContext<AnimatedImageComponent>) {
         
     }
 }

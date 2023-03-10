@@ -1,71 +1,69 @@
 //
-//  CameraView.swift
+//  CustomCameraView.swift
 //  Prototype-AIMoodDetection-IOS
 //
 //  Created by Reno Muijsenberg on 27/02/2023.
 //
 
-import Foundation
 import SwiftUI
-import AVFoundation
 
-struct CameraView: UIViewControllerRepresentable {
-    typealias UIViewControllerType = UIViewController
+struct CameraView: View {
+    let cameraService = CameraService()
+    @State var capturedImage: UIImage? = nil
     
-    let cameraService: CameraService
-    let didFinsishProcessingPhoto: (Result<AVCapturePhoto, Error>) -> ()
+    @Environment(\.presentationMode) private var presentationMode
     
-    static var isCameraAvailable: Bool {
-        let discoverySession = AVCaptureDevice.DiscoverySession(
-            deviceTypes: [.builtInWideAngleCamera],
-            mediaType: .video,
-            position: .back
-        )
-        return discoverySession.devices.count > 0
-    }
-    
-    func makeUIViewController(context: Context) -> UIViewController {
-        guard CameraView.isCameraAvailable else {
-            return UIViewController()
-        }
-        
-        cameraService.start(delegate: context.coordinator) {err in
-            if let err = err as NSError? {
-                didFinsishProcessingPhoto(.failure(err))
-                return
-            }
-        }
-        
-        let viewController = UIViewController()
-        viewController.view.backgroundColor = .black
-        viewController.view.layer.addSublayer(cameraService.previewLayer)
-        cameraService.previewLayer.frame = viewController.view.bounds
-        
-        return viewController
-    }
-    
-    func updateUIViewController(_ uiViewController: UIViewController, context: Context) {}
-    
-    func makeCoordinator() -> Coordinator {
-        Coordinator(self, didFinsishProcessingPhoto: didFinsishProcessingPhoto)
-    }
-
-    class Coordinator: NSObject, AVCapturePhotoCaptureDelegate {
-        let parent: CameraView
-        var didFinsishProcessingPhoto: (Result<AVCapturePhoto, Error>) -> ()
-
-        init(_ parent: CameraView, didFinsishProcessingPhoto: @escaping (Result<AVCapturePhoto, Error>) -> ()) {
-            self.parent = parent
-            self.didFinsishProcessingPhoto = didFinsishProcessingPhoto
-        }
-        
-        func photoOutput(_ output: AVCapturePhotoOutput, didFinishProcessingPhoto photo: AVCapturePhoto, error: Error?) {
-            if let error = error {
-                didFinsishProcessingPhoto(.failure(error))
-                return
+    var body: some View {
+        ZStack {
+            //View that extually shows the camera
+            CameraPreviewComponent(cameraService: cameraService) { result in
+                switch result {
+                case .success(let photo):
+                    if let data = photo.fileDataRepresentation() {
+                        capturedImage = UIImage(data: data)
+                    } else {
+                        print("Error: No image data found")
+                    }
+                case .failure(let err):
+                    print(err.localizedDescription)
+                }
             }
             
-            didFinsishProcessingPhoto(.success(photo))
+            //Layout on top of the camera view
+            VStack {
+                Spacer()
+                Button(action: {
+                    cameraService.capturePicture()
+                },
+                label: {
+                    Image(systemName: "circle")
+                        .font(.system(size: 72))
+                        .foregroundColor(.white)
+                })
+                .padding(.bottom)
+            }
         }
+        .toolbar(.hidden, for: .tabBar)
+        .navigationDestination(isPresented: Binding(
+            get: { capturedImage != nil },
+            set: { if !$0 { capturedImage = nil } }
+        )) {
+            PhotoView(capturedImage: $capturedImage)
+         }
+        .ignoresSafeArea()
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(
+            leading: Button(action: {
+                presentationMode.wrappedValue.dismiss()
+            },
+            label: {
+                Image(systemName: "chevron.left")
+                    .foregroundColor(.white)
+                    .imageScale(.large)
+                    .padding(.leading, -8)
+                Text("Back")
+                    .foregroundColor(.white)
+            })
+        )
     }
 }

@@ -15,9 +15,10 @@ struct SettingsView: View {
             VStack {
                 Form {
                     Section(header: Text("Homescreen")) {
-                        Toggle("Show weather", isOn: $settings.isShowWeather)
-                        Toggle("Show gif", isOn: $settings.isShowGif)
-                        Toggle("Show spotify", isOn: $settings.isShowSpotify)
+                        Toggle("Show Gif", isOn: $settings.isShowGif)
+                        Toggle("Show Weather", isOn: $settings.isShowWeather)
+                        Toggle("Show Spotify", isOn: $settings.isShowSpotify)
+                        Toggle("Show Heart Rate", isOn: $settings.isShowHeartRate)
                     }
                     
                 }
