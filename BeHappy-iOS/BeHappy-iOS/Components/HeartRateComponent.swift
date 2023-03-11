@@ -33,6 +33,7 @@ struct HeartRateComponent: View {
                         .aspectRatio(contentMode: .fit)
                         .foregroundColor(.red)
                         .frame(width: geometry.size.width, height: geometry.size.height, alignment: .leading)
+                        .padding(.leading, 10)
                 }
                 .padding(10)
                 
