@@ -32,42 +32,54 @@ struct HomeView: View {
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 18)
                         
-                        if settings.isShowGif {
-                            AnimatedImageComponent(mood: "Happy")
-                                .padding(10)
-                                .frame(height: 250)
-                        }
-                        
-                        if settings.isShowWeather {
-                            WeatherCardComponent()
-                                .padding(10)
-                        }
-                        
-                        if settings.isShowHeartRate {
-                            HeartRateComponent()
-                                .padding(10)
-                                .padding(.top, -20)
-                        }
-                        
-                        Spacer()
-                        
                         Button {
                             isCustomCameraViewPresentent = true
                         } label: {
                             Spacer()
                             Text("Take photo of the day!")
                                 .padding(10)
+                                .font(.title3)
                             Spacer()
                         }
                         .buttonStyle(.borderedProminent)
                         .padding(10)
+                        
+                        if settings.isShowGif {
+                            AnimatedImageComponent(mood: "Happy")
+                                .padding(10)
+                                .padding(.top, -10)
+                                .frame(height: 250)
+                            
+                            Spacer().frame(height: 20)
+                        }
+                        
+                        if settings.isShowSpotify {
+                            SpotifyComponent()
+                                .padding(10)
+                                .padding(.top, -10)
+                        }
+                        
+                        if settings.isShowWeather {
+                            WeatherCardComponent()
+                                .padding(10)
+                                .padding(.top, -10)
+                        }
+                        
+                        if settings.isShowHeartRate {
+                            HeartRateComponent()
+                                .padding(10)
+                                .padding(.top, -10)
+                        }
                     }
                 }
+                .background(Color(red: 0.95, green: 0.95, blue: 0.97))
                 .navigationTitle("Goodmorning Brett,")
                 .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
                     CameraView()
                 }
             }
+            
+
             .tabItem {
                 VStack {
                     Image(systemName: "house.fill")

@@ -19,6 +19,8 @@
 		C526393529B0D7DD001C0CD1 /* GoogleButtonComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526393429B0D7DD001C0CD1 /* GoogleButtonComponent.swift */; };
 		C526393729B0D8B9001C0CD1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */; };
 		C55C570129B61BD20053ABF5 /* PhotoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55C570029B61BD20053ABF5 /* PhotoView.swift */; };
+		C566033329BC73BE000D7836 /* SpotifyComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C566033229BC73BE000D7836 /* SpotifyComponent.swift */; };
+		C566033629BC77BF000D7836 /* SpotifyiOS in Frameworks */ = {isa = PBXBuildFile; productRef = C566033529BC77BF000D7836 /* SpotifyiOS */; };
 		C576B2E629B0D2B100C1D629 /* BeHappy_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */; };
 		C576B2EA29B0D2B300C1D629 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2E929B0D2B300C1D629 /* Assets.xcassets */; };
 		C576B2ED29B0D2B300C1D629 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C576B2EC29B0D2B300C1D629 /* Preview Assets.xcassets */; };
@@ -50,6 +52,7 @@
 		C526393429B0D7DD001C0CD1 /* GoogleButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButtonComponent.swift; sourceTree = "<group>"; };
 		C526393629B0D8B9001C0CD1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C55C570029B61BD20053ABF5 /* PhotoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoView.swift; sourceTree = "<group>"; };
+		C566033229BC73BE000D7836 /* SpotifyComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyComponent.swift; sourceTree = "<group>"; };
 		C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BeHappy-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C576B2E529B0D2B100C1D629 /* BeHappy_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeHappy_iOSApp.swift; sourceTree = "<group>"; };
 		C576B2E929B0D2B300C1D629 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */,
+				C566033629BC77BF000D7836 /* SpotifyiOS in Frameworks */,
 				0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */,
 				C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */,
 				C5F4970129B8B869001670E9 /* SDWebImage in Frameworks */,
@@ -112,6 +116,7 @@
 				C526393429B0D7DD001C0CD1 /* GoogleButtonComponent.swift */,
 				C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */,
 				C57EFAC829BB9F3C00EE19CA /* HeartRateComponent.swift */,
+				C566033229BC73BE000D7836 /* SpotifyComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 				0997038629B5DADE000D579C /* FirebaseAuth */,
 				C5F4970029B8B869001670E9 /* SDWebImage */,
 				C5F4970329B8BA40001670E9 /* FLAnimatedImage */,
+				C566033529BC77BF000D7836 /* SpotifyiOS */,
 			);
 			productName = "BeHappy-iOS";
 			productReference = C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */;
@@ -248,6 +254,7 @@
 				0997038529B5DADE000D579C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				C5F496FF29B8B869001670E9 /* XCRemoteSwiftPackageReference "SDWebImage" */,
 				C5F4970229B8BA40001670E9 /* XCRemoteSwiftPackageReference "FLAnimatedImage" */,
+				C566033429BC77BF000D7836 /* XCRemoteSwiftPackageReference "ios-sdk" */,
 			);
 			productRefGroup = C576B2E329B0D2B100C1D629 /* Products */;
 			projectDirPath = "";
@@ -293,6 +300,7 @@
 				09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */,
 				C576B30629B0D52500C1D629 /* CameraPreviewComponent.swift in Sources */,
 				C57EFAC929BB9F3C00EE19CA /* HeartRateComponent.swift in Sources */,
+				C566033329BC73BE000D7836 /* SpotifyComponent.swift in Sources */,
 				C526392A29B0D70D001C0CD1 /* +View.swift in Sources */,
 				0997038929B5E292000D579C /* FireAuth.swift in Sources */,
 				09617C3D29B87B5300559C81 /* SettingsView.swift in Sources */,
@@ -528,6 +536,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		C566033429BC77BF000D7836 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/spotify/ios-sdk";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		C5F496FF29B8B869001670E9 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
@@ -561,6 +577,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
 			productName = GoogleSignInSwift;
+		};
+		C566033529BC77BF000D7836 /* SpotifyiOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C566033429BC77BF000D7836 /* XCRemoteSwiftPackageReference "ios-sdk" */;
+			productName = SpotifyiOS;
 		};
 		C5F4970029B8B869001670E9 /* SDWebImage */ = {
 			isa = XCSwiftPackageProductDependency;

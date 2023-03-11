@@ -15,19 +15,29 @@ struct WeatherCardComponent: View {
     @State private var imageLink: URL?
 
     var body: some View {
-        HStack {
-            AsyncImage(url: imageLink)
-            Spacer()
-            VStack {
-                Text("\(Int(round(temperature ?? 0)))°C")
-                    .font(.title3)
-                Text("\(weatherDescription ?? "")")
-                    .font(.title3)
+        VStack {
+            HStack {
+                Text("Weather")
+                    .font(.title2)
+                    .bold()
+                
+                Spacer()
             }
-            .padding(.trailing, 20)
+            
+            HStack {
+                AsyncImage(url: imageLink)
+                Spacer()
+                VStack {
+                    Text("\(Int(round(temperature ?? 0)))°C")
+                        .font(.title3)
+                    Text("\(weatherDescription ?? "")")
+                        .font(.title3)
+                }
+                .padding(.trailing, 20)
+            }
+            .background(.white)
+            .cornerRadius(10)
         }
-        .background(Color.gray.opacity(0.3))
-        .cornerRadius(10)
         .onAppear() {
             weatherService.fetchTemperature(city: "Maasbree") { temperature, error in
                 if let temperature = temperature {
