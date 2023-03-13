@@ -12,6 +12,17 @@
 		0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0997038629B5DADE000D579C /* FirebaseAuth */; };
 		0997038929B5E292000D579C /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997038829B5E292000D579C /* FireAuth.swift */; };
 		09AE4D3C29BF143600553581 /* EmojiPhotoComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4D3B29BF143600553581 /* EmojiPhotoComponent.swift */; };
+		09AE4D4629BF23A900553581 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AE4D4529BF23A900553581 /* WidgetKit.framework */; };
+		09AE4D4829BF23A900553581 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09AE4D4729BF23A900553581 /* SwiftUI.framework */; };
+		09AE4D4B29BF23A900553581 /* MoodWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4D4A29BF23A900553581 /* MoodWidgetBundle.swift */; };
+		09AE4D4D29BF23A900553581 /* MoodWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4D4C29BF23A900553581 /* MoodWidgetLiveActivity.swift */; };
+		09AE4D4F29BF23A900553581 /* MoodWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4D4E29BF23A900553581 /* MoodWidget.swift */; };
+		09AE4D5129BF23AB00553581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09AE4D5029BF23AB00553581 /* Assets.xcassets */; };
+		09AE4D5529BF23AB00553581 /* MoodWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 09AE4D4329BF23A900553581 /* MoodWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		09AE4D5B29BF252800553581 /* EmojiWidgetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4D5A29BF252800553581 /* EmojiWidgetView.swift */; };
+		09AE4D5D29BF276C00553581 /* SettingsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09617C4129B8844900559C81 /* SettingsStore.swift */; };
+		09AE4D5F29BF27AF00553581 /* MoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4D5E29BF27AF00553581 /* MoodStore.swift */; };
+		09AE4D6029BF280700553581 /* MoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4D5E29BF27AF00553581 /* MoodStore.swift */; };
 		09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */; };
 		C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C526392429B0D6D4001C0CD1 /* GoogleSignIn */; };
 		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
@@ -42,12 +53,46 @@
 		C5F4970629B8BA8E001670E9 /* AnimatedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		09AE4D5329BF23AB00553581 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C576B2DA29B0D2B100C1D629 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09AE4D4229BF23A900553581;
+			remoteInfo = MoodWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		09AE4D5929BF23AB00553581 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				09AE4D5529BF23AB00553581 /* MoodWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		09617C3C29B87B5300559C81 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		09617C4129B8844900559C81 /* SettingsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsStore.swift; sourceTree = "<group>"; };
 		0997038429B5D9B0000D579C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		0997038829B5E292000D579C /* FireAuth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireAuth.swift; sourceTree = "<group>"; };
 		09AE4D3B29BF143600553581 /* EmojiPhotoComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiPhotoComponent.swift; sourceTree = "<group>"; };
+		09AE4D4329BF23A900553581 /* MoodWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MoodWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		09AE4D4529BF23A900553581 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		09AE4D4729BF23A900553581 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		09AE4D4A29BF23A900553581 /* MoodWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodWidgetBundle.swift; sourceTree = "<group>"; };
+		09AE4D4C29BF23A900553581 /* MoodWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodWidgetLiveActivity.swift; sourceTree = "<group>"; };
+		09AE4D4E29BF23A900553581 /* MoodWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodWidget.swift; sourceTree = "<group>"; };
+		09AE4D5029BF23AB00553581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09AE4D5229BF23AB00553581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09AE4D5A29BF252800553581 /* EmojiWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiWidgetView.swift; sourceTree = "<group>"; };
+		09AE4D5E29BF27AF00553581 /* MoodStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodStore.swift; sourceTree = "<group>"; };
 		09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = CNNEmotions.mlpackage; sourceTree = "<group>"; };
 		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
 		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +121,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		09AE4D4029BF23A900553581 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AE4D4829BF23A900553581 /* SwiftUI.framework in Frameworks */,
+				09AE4D4629BF23A900553581 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C576B2DF29B0D2B100C1D629 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -96,8 +150,31 @@
 			isa = PBXGroup;
 			children = (
 				09617C4129B8844900559C81 /* SettingsStore.swift */,
+				09AE4D5E29BF27AF00553581 /* MoodStore.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		09AE4D4429BF23A900553581 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09AE4D4529BF23A900553581 /* WidgetKit.framework */,
+				09AE4D4729BF23A900553581 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		09AE4D4929BF23A900553581 /* MoodWidget */ = {
+			isa = PBXGroup;
+			children = (
+				09AE4D4A29BF23A900553581 /* MoodWidgetBundle.swift */,
+				09AE4D4C29BF23A900553581 /* MoodWidgetLiveActivity.swift */,
+				09AE4D4E29BF23A900553581 /* MoodWidget.swift */,
+				09AE4D5A29BF252800553581 /* EmojiWidgetView.swift */,
+				09AE4D5029BF23AB00553581 /* Assets.xcassets */,
+				09AE4D5229BF23AB00553581 /* Info.plist */,
+			);
+			path = MoodWidget;
 			sourceTree = "<group>";
 		};
 		C526392829B0D6FA001C0CD1 /* Helpers */ = {
@@ -128,6 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				C576B2E429B0D2B100C1D629 /* BeHappy-iOS */,
+				09AE4D4929BF23A900553581 /* MoodWidget */,
+				09AE4D4429BF23A900553581 /* Frameworks */,
 				C576B2E329B0D2B100C1D629 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -136,6 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */,
+				09AE4D4329BF23A900553581 /* MoodWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -203,6 +283,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		09AE4D4229BF23A900553581 /* MoodWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09AE4D5629BF23AB00553581 /* Build configuration list for PBXNativeTarget "MoodWidgetExtension" */;
+			buildPhases = (
+				09AE4D3F29BF23A900553581 /* Sources */,
+				09AE4D4029BF23A900553581 /* Frameworks */,
+				09AE4D4129BF23A900553581 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MoodWidgetExtension;
+			productName = MoodWidgetExtension;
+			productReference = 09AE4D4329BF23A900553581 /* MoodWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C576B2E129B0D2B100C1D629 /* BeHappy-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C576B2F029B0D2B300C1D629 /* Build configuration list for PBXNativeTarget "BeHappy-iOS" */;
@@ -210,10 +307,12 @@
 				C576B2DE29B0D2B100C1D629 /* Sources */,
 				C576B2DF29B0D2B100C1D629 /* Frameworks */,
 				C576B2E029B0D2B100C1D629 /* Resources */,
+				09AE4D5929BF23AB00553581 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				09AE4D5429BF23AB00553581 /* PBXTargetDependency */,
 			);
 			name = "BeHappy-iOS";
 			packageProductDependencies = (
@@ -238,6 +337,9 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					09AE4D4229BF23A900553581 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					C576B2E129B0D2B100C1D629 = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -264,11 +366,20 @@
 			projectRoot = "";
 			targets = (
 				C576B2E129B0D2B100C1D629 /* BeHappy-iOS */,
+				09AE4D4229BF23A900553581 /* MoodWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		09AE4D4129BF23A900553581 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AE4D5129BF23AB00553581 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C576B2E029B0D2B100C1D629 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -283,6 +394,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		09AE4D3F29BF23A900553581 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AE4D4B29BF23A900553581 /* MoodWidgetBundle.swift in Sources */,
+				09AE4D4F29BF23A900553581 /* MoodWidget.swift in Sources */,
+				09AE4D6029BF280700553581 /* MoodStore.swift in Sources */,
+				09AE4D4D29BF23A900553581 /* MoodWidgetLiveActivity.swift in Sources */,
+				09AE4D5D29BF276C00553581 /* SettingsStore.swift in Sources */,
+				09AE4D5B29BF252800553581 /* EmojiWidgetView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C576B2DE29B0D2B100C1D629 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -301,6 +425,7 @@
 				C57EFACE29BBA56400EE19CA /* HealthKitService.swift in Sources */,
 				C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */,
 				09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */,
+				09AE4D5F29BF27AF00553581 /* MoodStore.swift in Sources */,
 				C576B30629B0D52500C1D629 /* CameraPreviewComponent.swift in Sources */,
 				C57EFAC929BB9F3C00EE19CA /* HeartRateComponent.swift in Sources */,
 				C566033329BC73BE000D7836 /* SpotifyComponent.swift in Sources */,
@@ -315,7 +440,69 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		09AE4D5429BF23AB00553581 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09AE4D4229BF23A900553581 /* MoodWidgetExtension */;
+			targetProxy = 09AE4D5329BF23AB00553581 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		09AE4D5729BF23AB00553581 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SFUH889WFT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2.MoodWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09AE4D5829BF23AB00553581 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = SFUH889WFT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MoodWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MoodWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2.MoodWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C576B2EE29B0D2B300C1D629 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -433,6 +620,7 @@
 		C576B2F129B0D2B300C1D629 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BeHappy-iOS/BeHappy-iOS.entitlements";
@@ -468,6 +656,7 @@
 		C576B2F229B0D2B300C1D629 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "BeHappy-iOS/BeHappy-iOS.entitlements";
@@ -503,6 +692,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		09AE4D5629BF23AB00553581 /* Build configuration list for PBXNativeTarget "MoodWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09AE4D5729BF23AB00553581 /* Debug */,
+				09AE4D5829BF23AB00553581 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C576B2DD29B0D2B100C1D629 /* Build configuration list for PBXProject "BeHappy-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
