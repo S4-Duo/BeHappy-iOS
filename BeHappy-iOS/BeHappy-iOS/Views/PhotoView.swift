@@ -13,21 +13,11 @@ struct PhotoView: View {
     @Binding var capturedImage: UIImage?
     @Environment(\.presentationMode) private var presentationMode
     @State private var mood: String = ""
+    @State private var emoji: String = ""
     
-    struct Mood {
-        var mood: String
-        var availableMoods: [String]
-        var emoji: String
-    }
-    
-    var Moods: [Mood] = [
-        Mood(mood: "Happy", availableMoods: ["Happy", "Surprise"], emoji: "😁"),
-        Mood(mood: "Neutral", availableMoods: ["Neutral"], emoji: "😐"),
-        Mood(mood: "Sad", availableMoods: ["Fear", "Disgust", "Sad", "Angry"], emoji: "😔"),
-    ]
     
     var body: some View {
-        ZStack {
+        ZStack(alignment: .bottom) {
             if let image = capturedImage {
                 Image(uiImage: image)
                     .resizable()
@@ -37,6 +27,7 @@ struct PhotoView: View {
                         classifyImage()
                     }
             }
+            EmojiPhotoComponent(emoji: emoji)
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(
@@ -52,11 +43,23 @@ struct PhotoView: View {
         )
     }
     
-    private func getTheCurrentMood(){
-        if let myMood = Moods.first(where: { $0.availableMoods.contains(mood)}){
-            print(myMood.mood)
+    private func setCurrentMood(predictedMood: String){
+        switch mood {
+        case "happy":
+            emoji = "😁"
+
+        case "neutral":
+            emoji = "😐"
+
+        case "sad":
+            emoji = "😔"
+
+        default:
+            print(mood)
         }
+        
     }
+
     
     private func classifyImage() {
         guard let image = capturedImage else { return }
@@ -73,7 +76,7 @@ struct PhotoView: View {
                     }
                     print("Confidence: \(topResult)")
                     self.mood = topResult.identifier
-                    self.getTheCurrentMood()
+                    self.setCurrentMood(predictedMood: topResult.identifier)
                 }
                 let cgImage = image.cgImage!
                 let handler = VNImageRequestHandler(cgImage: cgImage)
