@@ -12,6 +12,7 @@
 		0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 0997038629B5DADE000D579C /* FirebaseAuth */; };
 		0997038929B5E292000D579C /* FireAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0997038829B5E292000D579C /* FireAuth.swift */; };
 		09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */; };
+		C506476D29BF1BF800119767 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C506476C29BF1BF800119767 /* FirebaseFirestore */; };
 		C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C526392429B0D6D4001C0CD1 /* GoogleSignIn */; };
 		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
 		C526392A29B0D70D001C0CD1 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392929B0D70D001C0CD1 /* +View.swift */; };
@@ -36,7 +37,6 @@
 		C5B7011B29B9CDF8003589B1 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011A29B9CDF8003589B1 /* WeatherService.swift */; };
 		C5B7011D29B9D042003589B1 /* WeatherCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */; };
 		C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F496F429B8809D001670E9 /* CommunityView.swift */; };
-		C5F4970129B8B869001670E9 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970029B8B869001670E9 /* SDWebImage */; };
 		C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970329B8BA40001670E9 /* FLAnimatedImage */; };
 		C5F4970629B8BA8E001670E9 /* AnimatedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */; };
 /* End PBXBuildFile section */
@@ -82,8 +82,8 @@
 				C566033629BC77BF000D7836 /* SpotifyiOS in Frameworks */,
 				0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */,
 				C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */,
-				C5F4970129B8B869001670E9 /* SDWebImage in Frameworks */,
 				C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */,
+				C506476D29BF1BF800119767 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +96,13 @@
 				09617C4129B8844900559C81 /* SettingsStore.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		C506476B29BF1BF800119767 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C526392829B0D6FA001C0CD1 /* Helpers */ = {
@@ -126,6 +133,7 @@
 			children = (
 				C576B2E429B0D2B100C1D629 /* BeHappy-iOS */,
 				C576B2E329B0D2B100C1D629 /* Products */,
+				C506476B29BF1BF800119767 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -217,9 +225,9 @@
 				C526392429B0D6D4001C0CD1 /* GoogleSignIn */,
 				C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */,
 				0997038629B5DADE000D579C /* FirebaseAuth */,
-				C5F4970029B8B869001670E9 /* SDWebImage */,
 				C5F4970329B8BA40001670E9 /* FLAnimatedImage */,
 				C566033529BC77BF000D7836 /* SpotifyiOS */,
+				C506476C29BF1BF800119767 /* FirebaseFirestore */,
 			);
 			productName = "BeHappy-iOS";
 			productReference = C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */;
@@ -568,6 +576,11 @@
 			package = 0997038529B5DADE000D579C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
+		C506476C29BF1BF800119767 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0997038529B5DADE000D579C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		C526392429B0D6D4001C0CD1 /* GoogleSignIn */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C526392329B0D6D4001C0CD1 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
@@ -582,11 +595,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C566033429BC77BF000D7836 /* XCRemoteSwiftPackageReference "ios-sdk" */;
 			productName = SpotifyiOS;
-		};
-		C5F4970029B8B869001670E9 /* SDWebImage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = C5F496FF29B8B869001670E9 /* XCRemoteSwiftPackageReference "SDWebImage" */;
-			productName = SDWebImage;
 		};
 		C5F4970329B8BA40001670E9 /* FLAnimatedImage */ = {
 			isa = XCSwiftPackageProductDependency;
