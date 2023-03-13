@@ -13,6 +13,7 @@ struct HomeView: View {
     @State private var currentMood = "Happy"
     
     @StateObject var settings = Settings()
+    @StateObject var moodStore = MoodStore()
     
     init() {
         UITabBar.appearance().backgroundColor = UIColor.init(Color(red: 251 / 255, green: 252 / 255, blue: 252 / 255))
@@ -27,7 +28,7 @@ struct HomeView: View {
                             .font(.title)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 18)
-                        Text("\(currentMood)")
+                        Text("\(moodStore.mood)")
                             .font(.title)
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 18)
