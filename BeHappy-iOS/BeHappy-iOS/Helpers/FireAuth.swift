@@ -9,13 +9,13 @@ import Foundation
 import FirebaseAuth
 import GoogleSignIn
 import Firebase
+import FirebaseFirestore
+
 
 struct FireAuth {
     static let share = FireAuth()
-    
-    private init() {
-        
-    }
+    let db = Firestore.firestore()
+
     
     func signInWithGoogle(presenting: UIViewController, completion: @escaping(Error?) -> Void){
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
@@ -47,8 +47,18 @@ struct FireAuth {
                 }
                 
                 UserDefaults.standard.set(true, forKey: "signIn")
+                addUserToDatabase()
             }
 
+        }
+    }
+    
+    func addUserToDatabase() {
+        if let currentUser = Auth.auth().currentUser {
+            let userId = currentUser.uid
+            let userName = currentUser.displayName
+            
+            db.collection("users").document(userId).setData(["userName": userName!])
         }
     }
     
