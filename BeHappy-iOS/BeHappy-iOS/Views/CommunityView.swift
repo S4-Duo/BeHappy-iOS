@@ -26,9 +26,9 @@ struct CommunityView: View {
                             Text(user.userName)
                             Spacer()
 
-                            if let friend = friendsList.first(where: { $0.id == user.id }) {
+                            if friendsList.first(where: { $0.id == user.id }) != nil {
                                 Button(action: {
-                                    // removeFriend(friendId: user.id)
+                                     removeFriend(friendId: user.id)
                                 }, label: {
                                     Text("Remove")
                                         .padding(10)
@@ -36,7 +36,7 @@ struct CommunityView: View {
                                 .buttonStyle(.borderedProminent)
                             } else {
                                 Button(action: {
-                                    // addFriend(friendId: user.id)
+                                     addFriend(friendId: user.id)
                                 }, label: {
                                     Text("Follow")
                                         .padding(10)
@@ -81,7 +81,7 @@ struct CommunityView: View {
                 if let error = error {
                     print("Error getting document: \(error)")
                 } else if let document = document, document.exists {
-                    if let friendsArray = document.data()?["friendsRef"] as? [String] {
+                    if let friendsArray = document.data()?["friends"] as? [String] {
                         let friendPaths = friendsArray.map { $0 }
                         
                         for id in friendPaths {
@@ -97,15 +97,32 @@ struct CommunityView: View {
         }
     }
     
-//    private func addFriend(friendId: String) {
-//        let friendDocumentRef = db.collection("users").document(friendId)
-//
-//        let friendRefs = []
-//
-//        if let currentUser = Auth.auth().currentUser {
-//            db.collection("friends").document(currentUser.uid).setData(["friends": friendRefs])
-//        }
-//    }
+    private func addFriend(friendId: String) {
+        var friendIdList = [String]()
+        friendsList.append(FriendModel(friendId: friendId))
+        
+        for friendId in friendsList {
+            friendIdList.append(friendId.id)
+        }
+        
+        if let currentUser = Auth.auth().currentUser {
+            db.collection("friends").document(currentUser.uid).setData(["friends": friendIdList])
+        }
+    }
+    
+    private func removeFriend(friendId: String) {
+        var friendIdList = [String]()
+        
+        friendsList.removeAll { $0.id == friendId }
+        
+        for friendId in friendsList {
+            friendIdList.append(friendId.id)
+        }
+        
+        if let currentUser = Auth.auth().currentUser {
+            db.collection("friends").document(currentUser.uid).setData(["friends": friendIdList])
+        }
+    }
 }
 
 struct CommunityView_Previews: PreviewProvider {
