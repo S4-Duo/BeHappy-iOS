@@ -50,6 +50,7 @@
 		C5A0BCD729B76FBD0006E853 /* Childs-Hand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */; };
 		C5B7011B29B9CDF8003589B1 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011A29B9CDF8003589B1 /* WeatherService.swift */; };
 		C5B7011D29B9D042003589B1 /* WeatherCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */; };
+		C5C42D6329C0609C00C49EB9 /* FireStoreFriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C42D6229C0609C00C49EB9 /* FireStoreFriendsService.swift */; };
 		C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F496F429B8809D001670E9 /* CommunityView.swift */; };
 		C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970329B8BA40001670E9 /* FLAnimatedImage */; };
 		C5F4970629B8BA8E001670E9 /* AnimatedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */; };
@@ -120,6 +121,7 @@
 		C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Childs-Hand.ttf"; sourceTree = "<group>"; };
 		C5B7011A29B9CDF8003589B1 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardComponent.swift; sourceTree = "<group>"; };
+		C5C42D6229C0609C00C49EB9 /* FireStoreFriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreFriendsService.swift; sourceTree = "<group>"; };
 		C5F496F429B8809D001670E9 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -269,6 +271,7 @@
 				C576B30129B0D44700C1D629 /* CameraService.swift */,
 				C5B7011A29B9CDF8003589B1 /* WeatherService.swift */,
 				C57EFACD29BBA56400EE19CA /* HealthKitService.swift */,
+				C5C42D6229C0609C00C49EB9 /* FireStoreFriendsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -436,6 +439,7 @@
 				09617C4229B8844900559C81 /* SettingsStore.swift in Sources */,
 				C506476F29BF3DE100119767 /* UserModel.swift in Sources */,
 				C576B30229B0D44700C1D629 /* CameraService.swift in Sources */,
+				C5C42D6329C0609C00C49EB9 /* FireStoreFriendsService.swift in Sources */,
 				C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */,
 				C576B30429B0D4C400C1D629 /* CameraView.swift in Sources */,
 				C57EFACE29BBA56400EE19CA /* HealthKitService.swift in Sources */,
