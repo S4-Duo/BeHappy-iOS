@@ -88,6 +88,11 @@ struct HomeView: View {
                 }
             }
             
+            ExploreView()
+                .tabItem {
+                    Text("Explore")
+                }
+            
             CommunityView()
                 .tabItem {
                     Image(systemName: "person.3.fill")

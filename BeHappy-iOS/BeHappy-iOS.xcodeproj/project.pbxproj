@@ -51,6 +51,9 @@
 		C5B7011B29B9CDF8003589B1 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011A29B9CDF8003589B1 /* WeatherService.swift */; };
 		C5B7011D29B9D042003589B1 /* WeatherCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */; };
 		C5C42D6329C0609C00C49EB9 /* FireStoreFriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C42D6229C0609C00C49EB9 /* FireStoreFriendsService.swift */; };
+		C5C42D6729C068B300C49EB9 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = C5C42D6629C068B300C49EB9 /* FirebaseStorage */; };
+		C5C42D6929C06F4300C49EB9 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C42D6829C06F4300C49EB9 /* ExploreView.swift */; };
+		C5C42D6B29C0787200C49EB9 /* PagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C42D6A29C0787200C49EB9 /* PagerView.swift */; };
 		C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F496F429B8809D001670E9 /* CommunityView.swift */; };
 		C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970329B8BA40001670E9 /* FLAnimatedImage */; };
 		C5F4970629B8BA8E001670E9 /* AnimatedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */; };
@@ -122,6 +125,8 @@
 		C5B7011A29B9CDF8003589B1 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardComponent.swift; sourceTree = "<group>"; };
 		C5C42D6229C0609C00C49EB9 /* FireStoreFriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreFriendsService.swift; sourceTree = "<group>"; };
+		C5C42D6829C06F4300C49EB9 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		C5C42D6A29C0787200C49EB9 /* PagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		C5F496F429B8809D001670E9 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,6 +149,7 @@
 				C566033629BC77BF000D7836 /* SpotifyiOS in Frameworks */,
 				0997038729B5DADE000D579C /* FirebaseAuth in Frameworks */,
 				C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */,
+				C5C42D6729C068B300C49EB9 /* FirebaseStorage in Frameworks */,
 				C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */,
 				C506476D29BF1BF800119767 /* FirebaseFirestore in Frameworks */,
 			);
@@ -285,6 +291,8 @@
 				C576B30329B0D4C400C1D629 /* CameraView.swift */,
 				09617C3C29B87B5300559C81 /* SettingsView.swift */,
 				C5F496F429B8809D001670E9 /* CommunityView.swift */,
+				C5C42D6829C06F4300C49EB9 /* ExploreView.swift */,
+				C5C42D6A29C0787200C49EB9 /* PagerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +347,7 @@
 				C5F4970329B8BA40001670E9 /* FLAnimatedImage */,
 				C566033529BC77BF000D7836 /* SpotifyiOS */,
 				C506476C29BF1BF800119767 /* FirebaseFirestore */,
+				C5C42D6629C068B300C49EB9 /* FirebaseStorage */,
 			);
 			productName = "BeHappy-iOS";
 			productReference = C576B2E229B0D2B100C1D629 /* BeHappy-iOS.app */;
@@ -442,6 +451,8 @@
 				C5C42D6329C0609C00C49EB9 /* FireStoreFriendsService.swift in Sources */,
 				C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */,
 				C576B30429B0D4C400C1D629 /* CameraView.swift in Sources */,
+				C5C42D6B29C0787200C49EB9 /* PagerView.swift in Sources */,
+				C5C42D6929C06F4300C49EB9 /* ExploreView.swift in Sources */,
 				C57EFACE29BBA56400EE19CA /* HealthKitService.swift in Sources */,
 				C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */,
 				09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */,
@@ -809,6 +820,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C566033429BC77BF000D7836 /* XCRemoteSwiftPackageReference "ios-sdk" */;
 			productName = SpotifyiOS;
+		};
+		C5C42D6629C068B300C49EB9 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0997038529B5DADE000D579C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
 		};
 		C5F4970329B8BA40001670E9 /* FLAnimatedImage */ = {
 			isa = XCSwiftPackageProductDependency;

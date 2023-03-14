@@ -8,13 +8,14 @@
 import SwiftUI
 import CoreML
 import Vision
+import Firebase
+import FirebaseStorage
 
 struct PhotoView: View {
     @Binding var capturedImage: UIImage?
     @Environment(\.presentationMode) private var presentationMode
     @State private var mood: String = ""
     @State private var emoji: String = ""
-    
     
     var body: some View {
         ZStack(alignment: .bottom) {
@@ -27,7 +28,16 @@ struct PhotoView: View {
                         classifyImage()
                     }
             }
-            EmojiPhotoComponent(emoji: emoji)
+            VStack {
+                EmojiPhotoComponent(emoji: emoji)
+                if capturedImage != nil {
+                    Button(action: {
+                        uploadPhoto()
+                    }) {
+                        Text("Send >")
+                    }
+                }
+            }
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarItems(
@@ -41,6 +51,30 @@ struct PhotoView: View {
                 Text("Delete").foregroundColor(.white)
             })
         )
+    }
+    
+    func uploadPhoto() {
+        guard capturedImage != nil else {
+            return
+        }
+        
+        let storageRef = Storage.storage().reference()
+
+        let imageData = capturedImage!.jpegData(compressionQuality: 0.0)
+        
+        guard imageData != nil else {
+            return
+        }
+        
+        if let currentUser = Auth.auth().currentUser {
+            let fileRef = storageRef.child("images/\(currentUser.uid).jpeg")
+            
+            fileRef.putData(imageData!, metadata: nil) { metedata, error in
+                if error != nil && metedata == nil {
+                    print(error)
+                }
+            }
+        }
     }
     
     private func setCurrentMood(predictedMood: String){
