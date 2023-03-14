@@ -25,6 +25,8 @@
 		09AE4D6029BF280700553581 /* MoodStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09AE4D5E29BF27AF00553581 /* MoodStore.swift */; };
 		09F2EA5C29B9E78300550A8B /* CNNEmotions.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */; };
 		C506476D29BF1BF800119767 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C506476C29BF1BF800119767 /* FirebaseFirestore */; };
+		C506476F29BF3DE100119767 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506476E29BF3DE100119767 /* UserModel.swift */; };
+		C506477129BF585600119767 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C506477029BF585600119767 /* FriendModel.swift */; };
 		C526392529B0D6D4001C0CD1 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = C526392429B0D6D4001C0CD1 /* GoogleSignIn */; };
 		C526392729B0D6D4001C0CD1 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C526392629B0D6D4001C0CD1 /* GoogleSignInSwift */; };
 		C526392A29B0D70D001C0CD1 /* +View.swift in Sources */ = {isa = PBXBuildFile; fileRef = C526392929B0D70D001C0CD1 /* +View.swift */; };
@@ -48,6 +50,7 @@
 		C5A0BCD729B76FBD0006E853 /* Childs-Hand.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */; };
 		C5B7011B29B9CDF8003589B1 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011A29B9CDF8003589B1 /* WeatherService.swift */; };
 		C5B7011D29B9D042003589B1 /* WeatherCardComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */; };
+		C5C42D6329C0609C00C49EB9 /* FireStoreFriendsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C42D6229C0609C00C49EB9 /* FireStoreFriendsService.swift */; };
 		C5F496F529B8809D001670E9 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F496F429B8809D001670E9 /* CommunityView.swift */; };
 		C5F4970429B8BA40001670E9 /* FLAnimatedImage in Frameworks */ = {isa = PBXBuildFile; productRef = C5F4970329B8BA40001670E9 /* FLAnimatedImage */; };
 		C5F4970629B8BA8E001670E9 /* AnimatedImageComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */; };
@@ -94,6 +97,8 @@
 		09AE4D5A29BF252800553581 /* EmojiWidgetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiWidgetView.swift; sourceTree = "<group>"; };
 		09AE4D5E29BF27AF00553581 /* MoodStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodStore.swift; sourceTree = "<group>"; };
 		09F2EA5B29B9E78300550A8B /* CNNEmotions.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = CNNEmotions.mlpackage; sourceTree = "<group>"; };
+		C506476E29BF3DE100119767 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		C506477029BF585600119767 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
 		C526392929B0D70D001C0CD1 /* +View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+View.swift"; sourceTree = "<group>"; };
 		C526392B29B0D726001C0CD1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C526393429B0D7DD001C0CD1 /* GoogleButtonComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleButtonComponent.swift; sourceTree = "<group>"; };
@@ -116,6 +121,7 @@
 		C5A0BCD629B76F970006E853 /* Childs-Hand.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Childs-Hand.ttf"; sourceTree = "<group>"; };
 		C5B7011A29B9CDF8003589B1 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C5B7011C29B9D042003589B1 /* WeatherCardComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCardComponent.swift; sourceTree = "<group>"; };
+		C5C42D6229C0609C00C49EB9 /* FireStoreFriendsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireStoreFriendsService.swift; sourceTree = "<group>"; };
 		C5F496F429B8809D001670E9 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
 		C5F4970529B8BA8E001670E9 /* AnimatedImageComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedImageComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -151,15 +157,10 @@
 			children = (
 				09617C4129B8844900559C81 /* SettingsStore.swift */,
 				09AE4D5E29BF27AF00553581 /* MoodStore.swift */,
+				C506476E29BF3DE100119767 /* UserModel.swift */,
+				C506477029BF585600119767 /* FriendModel.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		C506476B29BF1BF800119767 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		09AE4D4429BF23A900553581 /* Frameworks */ = {
@@ -182,6 +183,13 @@
 				09AE4D5229BF23AB00553581 /* Info.plist */,
 			);
 			path = MoodWidget;
+			sourceTree = "<group>";
+		};
+		C506476B29BF1BF800119767 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C526392829B0D6FA001C0CD1 /* Helpers */ = {
@@ -263,6 +271,7 @@
 				C576B30129B0D44700C1D629 /* CameraService.swift */,
 				C5B7011A29B9CDF8003589B1 /* WeatherService.swift */,
 				C57EFACD29BBA56400EE19CA /* HealthKitService.swift */,
+				C5C42D6229C0609C00C49EB9 /* FireStoreFriendsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -426,8 +435,11 @@
 				C526392C29B0D726001C0CD1 /* AppDelegate.swift in Sources */,
 				C5F4970629B8BA8E001670E9 /* AnimatedImageComponent.swift in Sources */,
 				C55C570129B61BD20053ABF5 /* PhotoView.swift in Sources */,
+				C506477129BF585600119767 /* FriendModel.swift in Sources */,
 				09617C4229B8844900559C81 /* SettingsStore.swift in Sources */,
+				C506476F29BF3DE100119767 /* UserModel.swift in Sources */,
 				C576B30229B0D44700C1D629 /* CameraService.swift in Sources */,
+				C5C42D6329C0609C00C49EB9 /* FireStoreFriendsService.swift in Sources */,
 				C576B30029B0D3CC00C1D629 /* HomeView.swift in Sources */,
 				C576B30429B0D4C400C1D629 /* CameraView.swift in Sources */,
 				C57EFACE29BBA56400EE19CA /* HealthKitService.swift in Sources */,
@@ -464,7 +476,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SFUH889WFT;
+				DEVELOPMENT_TEAM = M89JG7A6CN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoodWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MoodWidget;
@@ -475,7 +487,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2.MoodWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS.MoodWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -491,7 +503,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = SFUH889WFT;
+				DEVELOPMENT_TEAM = M89JG7A6CN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MoodWidget/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = MoodWidget;
@@ -502,7 +514,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2.MoodWidget";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS.MoodWidget";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -635,7 +647,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = SFUH889WFT;
+				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
@@ -653,7 +665,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -671,7 +683,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"BeHappy-iOS/Preview Content\"";
-				DEVELOPMENT_TEAM = SFUH889WFT;
+				DEVELOPMENT_TEAM = M89JG7A6CN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BeHappy-iOS/Info.plist";
@@ -689,7 +701,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS2";
+				PRODUCT_BUNDLE_IDENTIFIER = "S4-Reno.BeHappy-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
