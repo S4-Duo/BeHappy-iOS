@@ -90,6 +90,7 @@ struct HomeView: View {
             
             ExploreView()
                 .tabItem {
+                    Image(systemName: "globe")
                     Text("Explore")
                 }
             
