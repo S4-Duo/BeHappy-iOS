@@ -5,13 +5,12 @@
 //  Created by Reno Muijsenberg on 02/03/2023.
 //
 import SwiftUI
+import Firebase
 
 struct HomeView: View {
     @State private var capturedImage: UIImage? = nil
     @State private var isCustomCameraViewPresentent = false
-    
-    @State private var currentMood = "Happy"
-    
+        
     @StateObject var settings = Settings()
     @StateObject var moodStore = MoodStore()
     
@@ -46,7 +45,7 @@ struct HomeView: View {
                         .padding(10)
                         
                         if settings.isShowGif {
-                            AnimatedImageComponent(mood: "Happy")
+                            AnimatedImageComponent()
                                 .padding(10)
                                 .padding(.top, -10)
                                 .frame(height: 250)
@@ -74,7 +73,7 @@ struct HomeView: View {
                     }
                 }
                 .background(Color(red: 0.95, green: 0.95, blue: 0.97))
-                .navigationTitle("Goodmorning Brett,")
+                .navigationTitle("Goodmorning \(Auth.auth().currentUser?.displayName!.components(separatedBy: " ")[0] ?? ""),")
                 .navigationDestination(isPresented: $isCustomCameraViewPresentent) {
                     CameraView()
                 }

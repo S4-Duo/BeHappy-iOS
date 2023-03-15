@@ -11,12 +11,7 @@ import FLAnimatedImage
 
 struct AnimatedImageComponent: UIViewRepresentable {
     let animatedView = FLAnimatedImageView()
-    
-    let mood: String
-    
-    init(mood: String) {
-        self.mood = mood
-    }
+    @StateObject var moodStore = MoodStore()
     
     let happy = [
         URL(string: "https://media.giphy.com/media/l4pTfx2qLszoacZRS/giphy.gif")!,
@@ -75,7 +70,7 @@ struct AnimatedImageComponent: UIViewRepresentable {
         
         var gifUrl: URL? = nil
         
-        switch mood {
+        switch moodStore.mood {
             case "Happy":
                 gifUrl = happy.randomElement()
             case "Neutral":

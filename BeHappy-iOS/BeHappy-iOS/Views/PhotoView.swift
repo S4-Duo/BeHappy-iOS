@@ -17,6 +17,8 @@ struct PhotoView: View {
     @State private var mood: String = ""
     @State private var emoji: String = ""
     
+    @StateObject var moodStore = MoodStore()
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             if let image = capturedImage {
@@ -32,6 +34,8 @@ struct PhotoView: View {
                 EmojiPhotoComponent(emoji: emoji)
                 if capturedImage != nil {
                     Button(action: {
+                        moodStore.mood = mood
+                        moodStore.emoji = emoji
                         uploadPhoto()
                     }) {
                         Text("Send >")
@@ -71,7 +75,7 @@ struct PhotoView: View {
             
             fileRef.putData(imageData!, metadata: nil) { metedata, error in
                 if error != nil && metedata == nil {
-                    print(error)
+                    print(error as Any)
                 }
             }
         }
@@ -80,14 +84,14 @@ struct PhotoView: View {
     private func setCurrentMood(predictedMood: String){
         switch mood {
         case "happy":
+            mood = "Happy"
             emoji = "😁"
-
         case "neutral":
+            mood = "Neutral"
             emoji = "😐"
-
         case "sad":
+            mood = "Sad"
             emoji = "😔"
-
         default:
             print(mood)
         }

@@ -11,7 +11,7 @@ import Combine
 
 
 class MoodStore: ObservableObject {
-    @AppStorage("mood") var mood = "SAD"
-    @AppStorage("emoji") var emoji = "😁"
+    @AppStorage("mood") var mood = ""
+    @AppStorage("emoji") var emoji = "😔"
 
 }
